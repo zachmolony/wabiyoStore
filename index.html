@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .grid-container {
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+        background-color: white;
+    }
+
+    .grid-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50px;
+    }
+    .textLogo > img {
+        display: block;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+</style>
+</head>
+<body>
+    <div class="logo">
+        <img src = "assets/logo.jpg">
+    </div>
+    <div class="textLogo">
+        <img src = "assets/clearTextLogo.png"> 
+    </div>
+
+
+<div class=grid-container>
+    <div class="grid-row">
+        <div class="grid-item"><img src = "assets/shirts/blurLogo_white.jpg" style="width:250;height:250px;"></div>
+        <div class="grid-item"><img src = "assets/shirts/brian_black.jpg" style="width:250;height:250px;"></div>
+    </div>
+    <div class="grid-row">
+        <div class="grid-item"><img src = "assets/shirts/tour%20white.jpg" style="width:250;height:250px;"></div>
+        <div class="grid-item"><img src = "assets/shirts/UNDERDOG%20PSYCHOSIS.jpg" style="width:250;height:250px;"></div>
+    </div>
+</div>
+
+</body>
+</html>
