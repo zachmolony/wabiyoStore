@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-    .grid-container {
-        margin-top: 80px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        grid-template-columns: auto auto auto;
-        background-color: white;
-    }
+<style>
+.grid-container {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+}
 
-    .grid-row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .logo > img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50px;
-    }
-    .textLogo > img {
-        display: block;
-        margin-top: 15px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logo > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+.textLogo > img {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer {
+    background-color: 0;
+    padding: 10px;
+    text-align: center;
+}   
+p.double {
+    border-style: solid;
+    border-color: red; 
+    border-width: thin
+}
+/* unvisited link */
+a:link {
+    color: red;
+}
 
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: palevioletred;
+}
+body {
+    //background-color: aqua;
+    background-image: url(assets/lightning.jpg);
+}
 </style>
 </head>
 <body>
@@ -49,6 +81,15 @@
         <div class="grid-item"><img src = "assets/shirts/tour%20white.jpg" style="width:250;height:250px;"></div>
         <div class="grid-item"><img src = "assets/shirts/UNDERDOG%20PSYCHOSIS.jpg" style="width:250;height:250px;"></div>
     </div>
+</div>
+
+<div class = "footer">
+    <p>
+        <a href="default.asp" target="_blank">soundcloud</a>
+        <a href="default.asp" target="_blank">instagram</a>
+        <a href="default.asp" target="_blank">youtube</a>    
+    </p>
+    
 </div>
 
 </body>
