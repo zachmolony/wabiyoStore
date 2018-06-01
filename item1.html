@@ -6,13 +6,13 @@
 <style>
 .item {
     margin: 0 auto;
-    width: 500px;
+    width: 600px;
 }
 .item > * {
     display: inline-block;
 }
 p1.lined {
-    border-style: dashed;
+    border-style:groove;
     border-color: red;
     border-width: medium;
 }
@@ -57,8 +57,10 @@ a:active {
     color: palevioletred;
 }
 body {
-    /background-image: url("assets/lightning.jpg")
+    /*background-image: url("assets/lightning.jpg")*/
+    font-family: "Courier New", Courier, monospace;
 }
+    p {margin-top: 20px}
 </style>
 </head>
 <body>
@@ -71,8 +73,8 @@ body {
     
     <div class="item">
         <img src = "assets/shirts/blurLogo_white.jpg" style="width:250;height:250px;" id="item1">
-        <p>This is a shit</p>
-        <p1 class="lined"> Sold Out </p1>
+        <p style="clear: right">This is a shit <br><br><br><br><br><br><br><br></p>
+        <p1 class="lined" style="clear: left">Sold Out</p1>
     </div>
 
     <div class = "footer">
