@@ -1,18 +1,70 @@
-html, body 
-{
-    height: 100%;
+.grid-container {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    background-color: transparent;
 }
 
-body
-{
-    background: 0; 
-    margin: 0;
-    padding: 0;
+.grid-row {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-div.grid-container {
+.logo > * {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
 
+.textLogo > img {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+p.double {
+    border-style: solid;
+    border-color: red;
+    border-width: thin
+}
+
+/* unvisited link */
+
+a:link {
+    color: red;
+}
+
+/* visited link */
+
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: black;
+}
+
+/* selected link */
+
+a:active {
+    color: palevioletred;
+}
+
+body {
+    /*background-image: url("assets/lightning.jpg")*/
+    font-family: "Courier New", Courier, monospace;
 }
