@@ -43,19 +43,19 @@ p.double {
 /* unvisited link */
 
 a:link {
-    color: red;
+    color: #00ffff;
 }
 
 /* visited link */
 
 a:visited {
-    color: red;
+    color: #00ffff;
 }
 
 /* mouse over link */
 
 a:hover {
-    color: black;
+    color: #ff0000;
 }
 
 /* selected link */
