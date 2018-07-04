@@ -11,7 +11,7 @@ function step() {
     
     // GRAVITY
     
-    if (player.y < 460) {
+    if (player.y < height - 40) {
         player.velocity.y += 1;
     }
     else {

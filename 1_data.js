@@ -22,5 +22,5 @@ const PLAYER =
 
 var sprite = null
 
-var width = 1000
-var height = 500
+var width = 1500
+var height = 800

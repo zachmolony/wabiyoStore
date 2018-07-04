@@ -1,7 +1,7 @@
 function setup() {
 
     //var a = createCanvas(width, height)
-    var a = createCanvas(1000, 500)
+    var a = createCanvas(1500, 800)
     a.parent("main")
 
     // player
