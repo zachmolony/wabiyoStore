@@ -11,7 +11,7 @@ function step() {
     
     // GRAVITY
     
-    if (!player.collide(platform1a)) {
+    if (!player.collide(platform1a) && !player.collide(platform1b) && !player.collide(platform1c)) {
         player.velocity.y += 1;
     }
     else {
@@ -20,6 +20,10 @@ function step() {
 }
 
     /*
+    
+    if (player.position.y > 500)
+    
+    
     if (player.y < 500 && !player.collide(platform) && !player.collide(platform2)) {
         player.velocity.y += 1;
     }
