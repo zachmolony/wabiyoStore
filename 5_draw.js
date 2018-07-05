@@ -1,8 +1,8 @@
 function draw() {
     clear()
-    background(150)
+    background(100)
 
-    if (player.position.y > 800) {
+    if (player.position.y > 3000) {
         player.x = 100;
         player.y = 400;
         player.velocity.y = 0
@@ -13,7 +13,11 @@ function draw() {
         player.x -= 10
     }
     if (keyWentDown(UP_ARROW) && player.collide(platform1a)) {
-        player.velocity.y -= 15;
+        player.velocity.y -= 10;
+    } else if (keyWentDown(UP_ARROW) && player.collide(platform1b)) {
+        player.velocity.y -= 10;
+    } else if (keyWentDown(UP_ARROW) && player.collide(platform1c)) {
+        player.velocity.y -= 10;
     }
     if (keyIsDown(39) === true && player.x != width - 40) {
         player.x += 10
@@ -22,8 +26,8 @@ function draw() {
     // redraw everything
     step();
 
-    player.position.x = player.x
-    player.position.y = player.y
+    player.position.x = player.x;
+    player.position.y = player.y;
 
     drawSprites()
 
