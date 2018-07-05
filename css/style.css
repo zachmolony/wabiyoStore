@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-content: center;
     grid-template-columns: auto auto auto;
-    background-color: transparent;
+    background-color: black;
 }
 
 .grid-row {
@@ -29,7 +29,7 @@
 
 .footer {
     margin-top: 20px;
-    background-color: 0;
+    background-color: black;
     padding: 10px;
     text-align: center;
 }
@@ -43,19 +43,19 @@ p.double {
 /* unvisited link */
 
 a:link {
-    color: red;
+    color: #00ffff;
 }
 
 /* visited link */
 
 a:visited {
-    color: red;
+    color: #00ffff;
 }
 
 /* mouse over link */
 
 a:hover {
-    color: black;
+    color: #ff0000;
 }
 
 /* selected link */
