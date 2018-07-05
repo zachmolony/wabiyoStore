@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>wabiyo store</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+<style>
+.item {
+    margin: 0 auto;
+    width: 600px;
+}
+.item > * {
+    display: inline-block;
+}
+p1.lined {
+    border-style:groove;
+    border-color: red;
+    border-width: medium;
+}
+#item1:hover {
+    content: url("assets/shirts/sampleT.jpg");
+}
+.logo > * {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+.textLogo > img {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer {
+    margin-top: 20px;
+    background-color: 0;
+    padding: 10px;
+    text-align: center;
+}   
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: palevioletred;
+}
+body {
+    /*background-image: url("assets/lightning.jpg")*/
+    font-family: "Courier New", Courier, monospace;
+}
+    p {margin-top: 20px}
+</style>
+</head>
+<body>
+    <div class="logo">
+        <a href="index.html">
+            <img src = "assets/logo.jpg">
+        </a>
+    </div>
+    <div class="textLogo">
+        <img src = "assets/clearTextLogo.png"> 
+    </div>
+    
+    <div class="item">
+        <img src = "assets/shirts/brian_black.jpg" style="width:250;height:250px;" id="item1">
+        <p style="clear: right">This is a shit <br><br><br><br><br>£34<br><br><br></p>
+        <p1 class="lined" style="clear: left">Sold Out</p1>
+    </div>
+
+    <div class = "footer">
+        <p>
+            <a href="https://soundcloud.com/wabiyo">soundcloud</a>
+            <a href="https://www.instagram.com/wab.iyo/">instagram</a>
+        </p>
+
+    </div>
+
+</body>
+</html>
