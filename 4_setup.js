@@ -15,4 +15,13 @@ function setup() {
     player.scale = PLAYER.scale
     player.restitution = PLAYER.restitution
     player.gravity = PLAYER.gravity
+    
+    // environment 1
+
+    // block A
+    platform1a = createSprite(220, 550, 450, 10)
+    platform1a.x = 250
+    platform1a.y = 289
+    platform1a.shapeColor = color(0, 255, 0)
+    platform1a.setCollider("rectangle", 0, 0, 450, 10)
 }
