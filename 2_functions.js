@@ -6,20 +6,36 @@ function windowResized() {
 
 
 function step() {
+
     player.x += player.velocity.x;
     player.y += player.velocity.y;
     
+    platform1f.x += platform1f.velocity.x;
+    platform1f.y += platform1f.velocity.y;
+
     // GRAVITY
-    
-    if (!player.collide(platform1a) && !player.collide(platform1b) && !player.collide(platform1c)) {
+
+    if (!player.collide(platform1a) && !player.collide(platform1b) && !player.collide(platform1c) && !player.collide(platform1d) && !player.collide(platform1e) && !player.collide(platform1f)) {
         player.velocity.y += 1;
-    }
-    else {
+    } else {
         player.velocity.y = 0;
+    }
+
+    // STAGE 2 RULES
+    // PLATFORM MOVEMENT
+
+    if (stage2 === true && platform1f.position.y === 200) {
+        platform1f.velocity.y = 4
+    }
+    if (stage2 === true && platform1f.position.y === 700) {
+        platform1f.velocity.y = -4
+    }
+    if (stage2 === true && player.collide(platform1f)) {
+        player.velocity.y = platform1f.velocity.y
     }
 }
 
-    /*
+/*
     
     if (player.position.y > 500)
     

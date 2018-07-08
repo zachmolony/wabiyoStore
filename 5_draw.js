@@ -3,8 +3,8 @@ function draw() {
     background(100)
 
     if (player.position.y > 3000) {
-        player.x = 100;
-        player.y = 400;
+        player.x = 200;
+        player.y = 250;
         player.velocity.y = 0
     }
 
@@ -13,16 +13,26 @@ function draw() {
         player.x -= 10
     }
     if (keyWentDown(UP_ARROW) && player.collide(platform1a)) {
-        player.velocity.y -= 10;
+        player.velocity.y -= 12;
     } else if (keyWentDown(UP_ARROW) && player.collide(platform1b)) {
-        player.velocity.y -= 10;
+        player.velocity.y -= 12;
     } else if (keyWentDown(UP_ARROW) && player.collide(platform1c)) {
-        player.velocity.y -= 10;
+        player.velocity.y -= 12;
+    } else if (keyWentDown(UP_ARROW) && player.collide(platform1d)) {
+        player.velocity.y -= 12;
+    } else if (keyWentDown(UP_ARROW) && player.collide(platform1e)) {
+        player.velocity.y -= 12;
+    } else if (keyWentDown(UP_ARROW) && player.collide(platform1f)) {
+        player.velocity.y -= 12;
     }
-    if (keyIsDown(39) === true && player.x != width - 40) {
+    
+    if (keyIsDown(39) === true && player.x != width + 200) {
         player.x += 10
+    } else if (player.position.x > 1500) {
+        clear()
+        setup2()
     }
-
+    
     // redraw everything
     step();
 
