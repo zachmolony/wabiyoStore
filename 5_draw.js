@@ -24,6 +24,8 @@ function draw() {
         player.velocity.y -= 12;
     } else if (keyWentDown(UP_ARROW) && player.collide(platform1f)) {
         player.velocity.y -= 12;
+    } else if (keyWentDown(UP_ARROW) && (stage2 === true) && (player.position.x > 925) && (player.position.x < 975)) {
+        player.velocity.y -= 12;
     }
     
     if (keyIsDown(39) === true && player.x != width + 200) {
@@ -32,7 +34,6 @@ function draw() {
         clear()
         setup2()
     }
-    
     // redraw everything
     step();
 
