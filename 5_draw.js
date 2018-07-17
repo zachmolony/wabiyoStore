@@ -70,6 +70,7 @@ function draw() {
 
 function mousePressed() {
     console.log('sprite.position.y = ' + player.position.y)
+    console.log('sprite.position.x = ' + player.position.x)
     console.log('mouseX = ' + mouseX)
     console.log('mouseY = ' + mouseY)
 }
