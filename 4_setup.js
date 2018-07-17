@@ -22,6 +22,10 @@ function setup() {
 // SETUP STAGE 1
 
 function setup1() {
+    
+    // reset player
+    player.x = 20
+    player.y = 250
 
     // environment
 
