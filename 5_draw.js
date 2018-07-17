@@ -30,9 +30,12 @@ function draw() {
     
     if (keyIsDown(39) === true && player.x != width + 200) {
         player.x += 10
-    } else if (player.position.x > 1500) {
+    } else if ((stage1 == true) && (player.position.x > 1500)) {
         clear()
         setup2()
+    } else if ((stage2 == true) && (player.position.x > 1500)) {
+        clear()
+        setup3()
     }
     // redraw everything
     step();

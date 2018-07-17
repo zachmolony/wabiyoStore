@@ -25,4 +25,6 @@ var sprite = null
 var width = 1500
 var height = 800
 
+var stage1 = true
 var stage2 = false
+var stage3 = false
