@@ -13,11 +13,29 @@ function step() {
     platform1f.y += platform1f.velocity.y;
 
     // GRAVITY
-
+    
+    // THIS NEEDS TO BE CHANGED SO THAT ITS NOT EVERY FUCKING TIME THEY TOUCH ONLY WHEN THE PLAYER IS ON TOP OF THE PLATFORM
+/*
     if (!player.collide(platform1a) && !player.collide(platform1b) && !player.collide(platform1c) && !player.collide(platform1d) && !player.collide(platform1e) && !player.collide(platform1f)) {
         player.velocity.y += 1;
     } else {
         player.velocity.y = 0;
+    }*/
+    
+    if (player.collide(platform1a) && player.position.y < platform1a.position.y + 25) {
+        player.velocity.y = 0;
+    } else if (player.collide(platform1b) && player.position.y < platform1b.position.y + 25) {
+        player.velocity.y = 0;
+    } else if (player.collide(platform1c) && player.position.y < platform1c.position.y + 25) {
+        player.velocity.y = 0;
+    } else if (player.collide(platform1d) && player.position.y < platform1d.position.y + 25) {
+        player.velocity.y = 0;
+    } else if (player.collide(platform1e) && player.position.y < platform1e.position.y + 25) {
+        player.velocity.y = 0;
+    } else if (player.collide(platform1f) && player.position.y < platform1f.position.y + 25) {
+        player.velocity.y = 0;
+    } else {
+        player.velocity.y += 1;
     }
 
     // STAGE 2 RULES
