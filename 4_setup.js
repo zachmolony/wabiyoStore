@@ -33,7 +33,6 @@ function setup1() {
         player.y = 250
     }
     
-    
     // bool 
     
     stage1 = true
@@ -110,7 +109,6 @@ function setup2() {
         player.y = 250
     }
     
-    
     // bool
     
     stage1 = false
@@ -156,7 +154,7 @@ function setup2() {
     platform1d.setCollider("rectangle", 0, 0, 200, 1)
     
     // last platform
-    platform1f = createSprite(950, 700, 50, 1)
+    platform1f = createSprite(980, 590, 50, 1)
     platform1f.x = 950
     platform1f.y = 700
     platform1f.shapeColor = color(0, 255, 0)

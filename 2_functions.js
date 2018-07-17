@@ -23,14 +23,14 @@ function step() {
     // STAGE 2 RULES
     // PLATFORM MOVEMENT
 
-    if (stage2 === true && platform1c.position.y === 200) {
-        platform1f.velocity.y = 4
+    if (stage2 === true && platform1c.position.y < 200) {
+        platform1c.velocity.y = 4
     }
-    if (stage2 === true && platform1c.position.y === 660) {
-        platform1f.velocity.y = -4
+    if (stage2 === true && platform1c.position.y > 660) {
+        platform1c.velocity.y = -4
     }
-    if ((stage2 === true) &&  (player.position.x > 925) && (player.position.x < 975) && (player.position.y < platform1f.position.y)) {
-        player.velocity.y = platform1f.velocity.y
+    if ((stage2 === true) &&  (player.position.x > 425) && (player.position.x < 475) && (player.position.y < platform1c.position.y && player.position.y > platform1c.position.y - 30)) {
+        player.velocity.y = platform1c.velocity.y
     }
 }
 
