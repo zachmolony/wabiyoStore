@@ -24,8 +24,21 @@ function setup() {
 function setup1() {
     
     // reset player
-    player.x = 20
-    player.y = 250
+    
+    if (stage2 === true) {
+        player.x = 1250
+        player.y = 250
+    } else {
+        player.x = 20
+        player.y = 250
+    }
+    
+    
+    // bool 
+    
+    stage1 = true
+    stage2 = false
+    stage3 = false
 
     // environment
 
@@ -89,8 +102,21 @@ function setup2() {
 
     // reset player
     
-    player.x = 20
-    player.y = 250
+    if (stage3 === true) {
+        player.x = 1250
+        player.y = 250
+    } else {
+        player.x = 20
+        player.y = 250
+    }
+    
+    
+    // bool
+    
+    stage1 = false
+    stage2 = true
+    stage3 = false
+    
     // environment 1
     
     platform1a.remove()
@@ -99,10 +125,6 @@ function setup2() {
     platform1d.remove()
     platform1e.remove()
     platform1f.remove()
-
-    stage1 = false
-    stage2 = true
-    stage3 = false
     
     // spawn block
     platform1a = createSprite(100, 350, 400, 1)
@@ -111,32 +133,32 @@ function setup2() {
     platform1a.shapeColor = color(0, 255, 0)
     platform1a.setCollider("rectangle", 0, 0, 400, 1)
 
-    // first platform
-    platform1b = createSprite(100, 700, 400, 1)
+    // block below spawn
+    platform1b = createSprite(100, 650, 400, 1)
     platform1b.x = 350
     platform1b.y = 550
     platform1b.shapeColor = color(0, 255, 0)
     platform1b.setCollider("rectangle", 0, 0, 400, 1)
 
-    // block below spawn
-    platform1c = createSprite(450, 700, 50, 1)
+    // moving platform
+    platform1c = createSprite(450, 650, 50, 1)
     platform1c.x = 350
     platform1c.y = 700
+    platform1c.velocity.y = -4
     platform1c.shapeColor = color(0, 255, 0)
     platform1c.setCollider("rectangle", 0, 0, 50, 1)
     
     // middle block
-    platform1d = createSprite(700, 700, 200, 1)
+    platform1d = createSprite(700, 650, 200, 1)
     platform1d.x = 700
     platform1d.y = 700
     platform1d.shapeColor = color(0, 255, 0)
     platform1d.setCollider("rectangle", 0, 0, 200, 1)
     
-    // moving platform
+    // last platform
     platform1f = createSprite(950, 700, 50, 1)
     platform1f.x = 950
     platform1f.y = 700
-    platform1f.velocity.y = -4
     platform1f.shapeColor = color(0, 255, 0)
     platform1f.setCollider("rectangle", 0, 0, 50, 1)
     
@@ -158,6 +180,12 @@ function setup3() {
     player.x = 20
     player.y = 250
     
+    // bool
+    
+    stage1 = false
+    stage2 = false
+    stage3 = true
+    
     // environment 1
     
     platform1a.remove()
@@ -166,9 +194,6 @@ function setup3() {
     platform1d.remove()
     platform1e.remove()
     platform1f.remove()
-    
-    stage2 = false
-    stage3 = true
     
     // spawn block
     platform1a = createSprite(100, 550, 400, 1)
