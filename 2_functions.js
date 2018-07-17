@@ -4,7 +4,6 @@ function windowResized() {
     //resizeCanvas(400, 600)
 }
 
-
 function step() {
 
     player.x += player.velocity.x;
