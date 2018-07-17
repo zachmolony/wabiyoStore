@@ -6,11 +6,11 @@ function setup() {
 
     // player
 
-    player = createSprite(200, 400, 50, 50)
+    player = createSprite(100, 526, 50, 50)
     player.velocity.y = PLAYER.velocity.y
     player.velocity.x = PLAYER.velocity.x
-    player.x = 200
-    player.y = 250
+    player.x = 100
+    player.y = 526
     player.addImage(PLAYER.img)
     player.scale = PLAYER.scale
     player.restitution = PLAYER.restitution
@@ -26,11 +26,11 @@ function setup1() {
     // reset player
     
     if (stage2 === true) {
-        player.x = 1250
-        player.y = 250
+        player.x = 1500
+        player.y = 328
     } else {
-        player.x = 20
-        player.y = 250
+        player.x = 100
+        player.y = 526
     }
     
     // bool 
@@ -103,10 +103,10 @@ function setup2() {
     
     if (stage3 === true) {
         player.x = 1250
-        player.y = 250
+        player.y = 526
     } else {
-        player.x = 20
-        player.y = 250
+        player.x = 10
+        player.y = 328
     }
     
     // bool
@@ -115,7 +115,7 @@ function setup2() {
     stage2 = true
     stage3 = false
     
-    // environment 1
+    // environment
     
     platform1a.remove()
     platform1b.remove()
@@ -154,7 +154,7 @@ function setup2() {
     platform1d.setCollider("rectangle", 0, 0, 200, 1)
     
     // last platform
-    platform1f = createSprite(980, 590, 50, 1)
+    platform1f = createSprite(980, 600, 50, 1)
     platform1f.x = 950
     platform1f.y = 700
     platform1f.shapeColor = color(0, 255, 0)
@@ -176,7 +176,7 @@ function setup3() {
     // reset player
     
     player.x = 20
-    player.y = 250
+    player.y = 525
     
     // bool
     
@@ -184,7 +184,7 @@ function setup3() {
     stage2 = false
     stage3 = true
     
-    // environment 1
+    // environment 
     
     platform1a.remove()
     platform1b.remove()
