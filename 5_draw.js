@@ -2,10 +2,18 @@ function draw() {
     clear()
     background(100)
 
-    if (player.position.y > 3000) {
+    if ((player.position.y > 3000) && (back === false)) {
         player.x = 200;
         player.y = 250;
         player.velocity.y = 0
+    } else if ((player.position.y > 3000) && (back === true) && (stage1 === true)) {
+        player.velocity.y = 0;
+        player.x = 1200;
+        player.y = 200;
+    } else if ((player.position.y > 3000) && (back === true) && (stage2 === true)) {
+        player.velocity.y = 0;
+        player.x = 1200;
+        player.y = 400;
     }
 
     // player controls
@@ -36,14 +44,17 @@ function draw() {
         clear()
         clearFirstStages()
         setup2()
+        back = false
     } else if ((stage1 == true) && (player.position.x < 0)) {
         // if the user goes back past stage 1
         clear()
         clearFirstStages()
         setup1()
+        back = true
     } else if ((stage2 == true) && (player.position.x > 1500)) {
         // if the user goes past stage 2
         clear()
+        back = false
         clearFirstStages()
         setup3()
     } else if ((stage2 == true) && (player.position.x < 0)) {
@@ -51,11 +62,13 @@ function draw() {
         clear()
         clearFirstStages()
         setup1()
+        back = true
     } else if ((stage3 == true) && (player.position.x < 0)) {
         // if the user goes back past stage 3
         clear()
         clearStage3()
         setup2()
+        back = true
     }
     
     // redraw everything
