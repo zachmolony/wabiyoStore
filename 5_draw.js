@@ -1,6 +1,6 @@
 function draw() {
     clear()
-    background(100)
+    background(10)
 
     if ((player.position.y > 3000) && (back === false)) {
         player.x = 200;
