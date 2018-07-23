@@ -5,7 +5,7 @@
 const PLAYER =
       {
         img: null,
-        src: 'assets/alien.png',
+        src: 'assets/eugene.png',
         size: 5, // in pixels
         scale: 0.3, // 0 to "infinite", 1 = 100%
         velocity:
