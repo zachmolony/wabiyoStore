@@ -41,7 +41,7 @@ function step() {
     if (stage2 === true && platform_c.position.y > 660) {
         platform_c.velocity.y = -4
     }
-    if ((stage2 === true) && (player.position.x > 425) && (player.position.x < 475) && (player.position.y < platform_c.position.y && player.position.y > platform_c.position.y - 30)) {
+    if ((stage2 === true) && (player.position.x > 425) && (player.position.x < 475) && (player.position.y < platform_c.position.y && player.position.y > platform_c.position.y - 10)) {
         player.velocity.y = platform_c.velocity.y
     }
 }
