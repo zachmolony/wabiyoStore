@@ -1,6 +1,8 @@
 function draw() {
     clear()
     background(100)
+    
+    
 
     if ((player.position.y > 3000) && (back === false)) {
         player.x = 200;
@@ -42,33 +44,37 @@ function draw() {
     } else if ((stage1 == true) && (player.position.x > 1500)) {
         // if the user goes past stage 1
         clear()
-        clearFirstStages()
+        clearStage1()
         setup2()
         back = false
-    } else if ((stage1 == true) && (player.position.x < 0)) {
-        // if the user goes back past stage 1
-        clear()
-        clearFirstStages()
-        setup1()
-        back = true
-    } else if ((stage2 == true) && (player.position.x > 1500)) {
+    } else if ((stage2 === true) && (player.position.x > 1500)) {
         // if the user goes past stage 2
         clear()
         back = false
-        clearFirstStages()
+        clearStage2()
         setup3()
-    } else if ((stage2 == true) && (player.position.x < 0)) {
+    } else if ((stage2 === true) && (player.position.x < 0)) {
         // if the user goes back past stage 2
         clear()
-        clearFirstStages()
+        clearStage2()
         setup1()
         back = true
-    } else if ((stage3 == true) && (player.position.x < 0)) {
+    } else if ((stage3 === true) && (player.position.x < 0)) {
         // if the user goes back past stage 3
         clear()
         clearStage3()
         setup2()
         back = true
+    }
+    
+    // debugging hack
+    if ((stage1 === true) && (player.position.x < 0)) {
+        // if the user goes past stage 1
+        console.log("hacker")
+        clear()
+        clearStage1()
+        setup2()
+        back = false
     }
     
     // redraw everything
@@ -82,8 +88,8 @@ function draw() {
 }
 
 function mousePressed() {
-    console.log('sprite.position.y = ' + player.position.y)
-    console.log('sprite.position.x = ' + player.position.x)
+    console.log('platform2a.position.y = ' + platform2a.position.y)
+    console.log('platform2a.position.x = ' + platform2a.position.x)
     console.log('mouseX = ' + mouseX)
     console.log('mouseY = ' + mouseY)
 }

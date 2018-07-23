@@ -84,9 +84,9 @@ function setup1() {
     //platform1e.setCollider("rectangle", 0, 0, 400, 1)
 }   
 
-// CLEAR STAGE 1 / 2
+// CLEAR STAGE 1
 
-function clearFirstStages() {
+function clearStage1() {
     platform1a.remove()
     platform1b.remove()
     platform1c.remove()
@@ -105,8 +105,8 @@ function setup2() {
         player.x = 1250
         player.y = 526
     } else {
-        player.x = 10
-        player.y = 328
+        player.x = 100
+        player.y = 350
     }
     
     // bool
@@ -115,59 +115,61 @@ function setup2() {
     stage2 = true
     stage3 = false
     
-    // environment
-    
-    platform1a.remove()
-    platform1b.remove()
-    platform1c.remove()
-    platform1d.remove()
-    platform1e.remove()
-    platform1f.remove()
-    
     // spawn block
-    platform1a = createSprite(100, 350, 400, 1)
-    platform1a.x = 100
-    platform1a.y = 350
-    platform1a.shapeColor = color(0, 255, 0)
+    platform2a = createSprite(100, 350, 400, 1)
+    platform2a.x = 100
+    platform2a.y = 350
+    platform2a.shapeColor = color(0, 255, 0)
     //platform1a.setCollider("rectangle", 0, 0, 400, 1)
 
     // block below spawn
-    platform1b = createSprite(100, 650, 400, 1)
-    platform1b.x = 350
-    platform1b.y = 550
-    platform1b.shapeColor = color(0, 255, 0)
+    platform2b = createSprite(100, 650, 400, 1)
+    platform2b.x = 350
+    platform2b.y = 550
+    platform2b.shapeColor = color(0, 255, 0)
     //platform1b.setCollider("rectangle", 0, 0, 400, 1)
 
     // moving platform
-    platform1c = createSprite(450, 650, 50, 1)
-    platform1c.x = 350
-    platform1c.y = 700
-    platform1c.velocity.y = -4
-    platform1c.shapeColor = color(0, 255, 0)
+    platform2c = createSprite(450, 650, 50, 1)
+    platform2c.x = 350
+    platform2c.y = 700
+    platform2c.velocity.y = -4
+    platform2c.shapeColor = color(0, 255, 0)
     //platform1c.setCollider("rectangle", 0, 0, 50, 1)
     
     // middle block
-    platform1d = createSprite(700, 650, 200, 1)
-    platform1d.x = 700
-    platform1d.y = 700
-    platform1d.shapeColor = color(0, 255, 0)
+    platform2d = createSprite(700, 650, 200, 1)
+    platform2d.x = 700
+    platform2d.y = 700
+    platform2d.shapeColor = color(0, 255, 0)
     //platform1d.setCollider("rectangle", 0, 0, 200, 1)
     
     // last platform
-    platform1f = createSprite(980, 600, 50, 1)
-    platform1f.x = 950
-    platform1f.y = 700
-    platform1f.shapeColor = color(0, 255, 0)
+    platform2f = createSprite(980, 600, 50, 1)
+    platform2f.x = 950
+    platform2f.y = 700
+    platform2f.shapeColor = color(0, 255, 0)
     //platform1f.setCollider("rectangle", 0, 0, 50, 1)
     
     // end block
-    platform1e = createSprite(1350, 550, 400, 1)
-    platform1e.x = 1350
-    platform1e.y = 350
-    platform1e.shapeColor = color(0, 255, 0)
+    platform2e = createSprite(1350, 550, 400, 1)
+    platform2e.x = 1350
+    platform2e.y = 350
+    platform2e.shapeColor = color(0, 255, 0)
     //platform1e.setCollider("rectangle", 0, 0, 400, 1)
 
 }   
+
+// CLEAR STAGE 2
+
+function clearStage2() {
+    platform2a.remove()
+    platform2b.remove()
+    platform2c.remove()
+    platform2d.remove()
+    platform2e.remove()
+    platform2f.remove()   
+}
 
 // SETUP STAGE 3
 
