@@ -9,24 +9,24 @@ function step() {
     player.x += player.velocity.x;
     player.y += player.velocity.y;
 
-    platform1f.x += platform1f.velocity.x;
-    platform1f.y += platform1f.velocity.y;
+    platform_f.x += platform_f.velocity.x;
+    platform_f.y += platform_f.velocity.y;
 
     // GRAVITY
 
     // THIS NEEDS TO BE CHANGED SO THAT ITS NOT EVERY FUCKING TIME THEY TOUCH ONLY WHEN THE PLAYER IS ON TOP OF THE PLATFORM
 
-    if ((player.position.x > platform1a.position.x - (platform1a.width / 2)) && (player.position.x < platform1a.position.x + (platform1a.width / 2)) && (player.position.y < platform1a.position.y + 10 && player.position.y > platform1a.position.y - 10)) {
+    if ((player.position.x > platform_a.position.x - (platform_a.width / 2)) && (player.position.x < platform_a.position.x + (platform_a.width / 2)) && (player.position.y < platform_a.position.y + 10 && player.position.y > platform_a.position.y - 10)) {
         player.velocity.y = 0;
-    } else if ((player.position.x > platform1b.position.x - (platform1b.width / 2)) && (player.position.x < platform1b.position.x + (platform1b.width / 2)) && (player.position.y < platform1b.position.y + 10 && player.position.y > platform1b.position.y - 10)) {
+    } else if ((player.position.x > platform_b.position.x - (platform_b.width / 2)) && (player.position.x < platform_b.position.x + (platform_b.width / 2)) && (player.position.y < platform_b.position.y + 10 && player.position.y > platform_b.position.y - 10)) {
         player.velocity.y = 0;
-    } else if ((player.position.x > platform1c.position.x - (platform1c.width / 2)) && (player.position.x < platform1c.position.x + (platform1c.width / 2)) && (player.position.y < platform1c.position.y + 10 && player.position.y > platform1c.position.y - 10)) {
+    } else if ((player.position.x > platform_c.position.x - (platform_c.width / 2)) && (player.position.x < platform_c.position.x + (platform_c.width / 2)) && (player.position.y < platform_c.position.y + 10 && player.position.y > platform_c.position.y - 10)) {
         player.velocity.y = 0;
-    } else if ((player.position.x > platform1d.position.x - (platform1d.width / 2)) && (player.position.x < platform1d.position.x + (platform1d.width / 2)) && (player.position.y < platform1d.position.y + 10 && player.position.y > platform1d.position.y - 10)) {
+    } else if ((player.position.x > platform_d.position.x - (platform_d.width / 2)) && (player.position.x < platform_d.position.x + (platform_d.width / 2)) && (player.position.y < platform_d.position.y + 10 && player.position.y > platform_d.position.y - 10)) {
         player.velocity.y = 0;
-    } else if ((player.position.x > platform1e.position.x - (platform1e.width / 2)) && (player.position.x < platform1e.position.x + (platform1e.width / 2)) && (player.position.y < platform1e.position.y + 10 && player.position.y > platform1e.position.y - 10)) {
+    } else if ((player.position.x > platform_e.position.x - (platform_e.width / 2)) && (player.position.x < platform_e.position.x + (platform_e.width / 2)) && (player.position.y < platform_e.position.y + 10 && player.position.y > platform_e.position.y - 10)) {
         player.velocity.y = 0;
-    } else if ((player.position.x > platform1f.position.x - (platform1f.width / 2)) && (player.position.x < platform1f.position.x + (platform1f.width / 2)) && (player.position.y < platform1f.position.y + 10 && player.position.y > platform1f.position.y - 10)) {
+    } else if ((player.position.x > platform_f.position.x - (platform_f.width / 2)) && (player.position.x < platform_f.position.x + (platform_f.width / 2)) && (player.position.y < platform_f.position.y + 10 && player.position.y > platform_f.position.y - 10)) {
         player.velocity.y = 0;
     } else {
         player.velocity.y += 1;
@@ -35,14 +35,14 @@ function step() {
     // STAGE 2 RULES
     // PLATFORM MOVEMENT
 
-    if (stage2 === true && platform1c.position.y < 200) {
-        platform1c.velocity.y = 4
+    if (stage2 === true && platform_c.position.y < 200) {
+        platform_c.velocity.y = 4
     }
-    if (stage2 === true && platform1c.position.y > 660) {
-        platform1c.velocity.y = -4
+    if (stage2 === true && platform_c.position.y > 660) {
+        platform_c.velocity.y = -4
     }
-    if ((stage2 === true) && (player.position.x > 425) && (player.position.x < 475) && (player.position.y < platform1c.position.y && player.position.y > platform1c.position.y - 30)) {
-        player.velocity.y = platform1c.velocity.y
+    if ((stage2 === true) && (player.position.x > 425) && (player.position.x < 475) && (player.position.y < platform_c.position.y && player.position.y > platform_c.position.y - 30)) {
+        player.velocity.y = platform_c.velocity.y
     }
 }
 

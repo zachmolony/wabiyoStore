@@ -42,57 +42,57 @@ function setup1() {
     // environment
 
     // block A
-    platform1a = createSprite(150, 550, 400, 1)
-    platform1a.x = 150
-    platform1a.y = 550
-    platform1a.shapeColor = color(0, 255, 0)
-    platform1a.setCollider("rectangle", 0, 0, 400, 1)
+    platform_a = createSprite(150, 550, 400, 1)
+    platform_a.x = 150
+    platform_a.y = 550
+    platform_a.shapeColor = color(0, 255, 0)
+    platform_a.setCollider("rectangle", 0, 0, 400, 1)
 
     // block F (a 2)
-    platform1f = createSprite(510, 500, 50, 1)
-    platform1f.x = 510
-    platform1f.y = 500
-    platform1f.shapeColor = color(0, 255, 0)
-    platform1f.setCollider("rectangle", 0, 0, 50, 1)
+    platform_f = createSprite(510, 500, 50, 1)
+    platform_f.x = 510
+    platform_f.y = 500
+    platform_f.shapeColor = color(0, 255, 0)
+    platform_f.setCollider("rectangle", 0, 0, 50, 1)
     
     // block B
-    platform1b = createSprite(670, 450, 50, 1)
-    platform1b.x = 670
-    platform1b.y = 450
-    platform1b.shapeColor = color(0, 255, 0)
-    platform1b.setCollider("rectangle", 0, 0, 50, 1)
+    platform_b = createSprite(670, 450, 50, 1)
+    platform_b.x = 670
+    platform_b.y = 450
+    platform_b.shapeColor = color(0, 255, 0)
+    platform_b.setCollider("rectangle", 0, 0, 50, 1)
 
     // block C
-    platform1c = createSprite(830, 400, 50, 1)
-    platform1c.x = 830
-    platform1c.y = 400
-    platform1c.shapeColor = color(0, 255, 0)
-    platform1c.setCollider("rectangle", 0, 0, 50, 1)
+    platform_c = createSprite(830, 400, 50, 1)
+    platform_c.x = 830
+    platform_c.y = 400
+    platform_c.shapeColor = color(0, 255, 0)
+    platform_c.setCollider("rectangle", 0, 0, 50, 1)
     
     // block D
-    platform1d = createSprite(990, 350, 50, 1)
-    platform1d.x = 990
-    platform1d.y = 350
-    platform1d.shapeColor = color(0, 400, 0)
-    platform1d.setCollider("rectangle", 0, 0, 50, 1)
+    platform_d = createSprite(990, 350, 50, 1)
+    platform_d.x = 990
+    platform_d.y = 350
+    platform_d.shapeColor = color(0, 400, 0)
+    platform_d.setCollider("rectangle", 0, 0, 50, 1)
     
     // block E
-    platform1e = createSprite(1350, 350, 400, 1)
-    platform1e.x = 1350
-    platform1e.y = 350
-    platform1e.shapeColor = color(0, 255, 0)
-    platform1e.setCollider("rectangle", 0, 0, 400, 1)
+    platform_e = createSprite(1350, 350, 400, 1)
+    platform_e.x = 1350
+    platform_e.y = 350
+    platform_e.shapeColor = color(0, 255, 0)
+    platform_e.setCollider("rectangle", 0, 0, 400, 1)
 }   
 
 // CLEAR STAGE 1 / 2
 
 function clearFirstStages() {
-    platform1a.remove()
-    platform1b.remove()
-    platform1c.remove()
-    platform1d.remove()
-    platform1e.remove()
-    platform1f.remove()   
+    platform_a.remove()
+    platform_b.remove()
+    platform_c.remove()
+    platform_d.remove()
+    platform_e.remove()
+    platform_f.remove()   
 }
 
 // SETUP STAGE 2
@@ -117,55 +117,55 @@ function setup2() {
     
     // environment
     
-    platform1a.remove()
-    platform1b.remove()
-    platform1c.remove()
-    platform1d.remove()
-    platform1e.remove()
-    platform1f.remove()
+    platform_a.remove()
+    platform_b.remove()
+    platform_c.remove()
+    platform_d.remove()
+    platform_e.remove()
+    platform_f.remove()
     
     // spawn block
-    platform1a = createSprite(100, 350, 400, 1)
-    platform1a.x = 100
-    platform1a.y = 350
-    platform1a.shapeColor = color(0, 255, 0)
-    platform1a.setCollider("rectangle", 0, 0, 400, 1)
+    platform_a = createSprite(100, 350, 400, 1)
+    platform_a.x = 100
+    platform_a.y = 350
+    platform_a.shapeColor = color(0, 255, 0)
+    platform_a.setCollider("rectangle", 0, 0, 400, 1)
 
     // block below spawn
-    platform1b = createSprite(100, 650, 400, 1)
-    platform1b.x = 350
-    platform1b.y = 550
-    platform1b.shapeColor = color(0, 255, 0)
-    platform1b.setCollider("rectangle", 0, 0, 400, 1)
+    platform_b = createSprite(100, 650, 400, 1)
+    platform_b.x = 350
+    platform_b.y = 550
+    platform_b.shapeColor = color(0, 255, 0)
+    platform_b.setCollider("rectangle", 0, 0, 400, 1)
 
     // moving platform
-    platform1c = createSprite(450, 650, 50, 1)
-    platform1c.x = 350
-    platform1c.y = 700
-    platform1c.velocity.y = -4
-    platform1c.shapeColor = color(0, 255, 0)
-    platform1c.setCollider("rectangle", 0, 0, 50, 1)
+    platform_c = createSprite(450, 650, 50, 1)
+    platform_c.x = 350
+    platform_c.y = 700
+    platform_c.velocity.y = -4
+    platform_c.shapeColor = color(0, 255, 0)
+    platform_c.setCollider("rectangle", 0, 0, 50, 1)
     
     // middle block
-    platform1d = createSprite(700, 650, 200, 1)
-    platform1d.x = 700
-    platform1d.y = 700
-    platform1d.shapeColor = color(0, 255, 0)
-    platform1d.setCollider("rectangle", 0, 0, 200, 1)
+    platform_d = createSprite(700, 650, 200, 1)
+    platform_d.x = 700
+    platform_d.y = 700
+    platform_d.shapeColor = color(0, 255, 0)
+    platform_d.setCollider("rectangle", 0, 0, 200, 1)
     
     // last platform
-    platform1f = createSprite(980, 600, 50, 1)
-    platform1f.x = 950
-    platform1f.y = 700
-    platform1f.shapeColor = color(0, 255, 0)
-    platform1f.setCollider("rectangle", 0, 0, 50, 1)
+    platform_f = createSprite(980, 600, 50, 1)
+    platform_f.x = 950
+    platform_f.y = 700
+    platform_f.shapeColor = color(0, 255, 0)
+    platform_f.setCollider("rectangle", 0, 0, 50, 1)
     
     // end block
-    platform1e = createSprite(1350, 550, 400, 1)
-    platform1e.x = 1350
-    platform1e.y = 350
-    platform1e.shapeColor = color(0, 255, 0)
-    platform1e.setCollider("rectangle", 0, 0, 400, 1)
+    platform_e = createSprite(1350, 550, 400, 1)
+    platform_e.x = 1350
+    platform_e.y = 350
+    platform_e.shapeColor = color(0, 255, 0)
+    platform_e.setCollider("rectangle", 0, 0, 400, 1)
 
 }   
 
@@ -186,54 +186,54 @@ function setup3() {
     
     // environment 
     
-    platform1a.remove()
-    platform1b.remove()
-    platform1c.remove()
-    platform1d.remove()
-    platform1e.remove()
-    platform1f.remove()
+    platform_a.remove()
+    platform_b.remove()
+    platform_c.remove()
+    platform_d.remove()
+    platform_e.remove()
+    platform_f.remove()
     
     // spawn block
-    platform1a = createSprite(100, 550, 400, 1)
-    platform1a.x = 100
-    platform1a.y = 350
-    platform1a.shapeColor = color(0, 255, 0)
-    platform1a.setCollider("rectangle", 0, 0, 400, 1)
+    platform_a = createSprite(100, 550, 400, 1)
+    platform_a.x = 100
+    platform_a.y = 350
+    platform_a.shapeColor = color(0, 255, 0)
+    platform_a.setCollider("rectangle", 0, 0, 400, 1)
 
     // lower first platform
-    platform1b = createSprite(550, 620, 250, 1)
-    platform1b.x = 350
-    platform1b.y = 550
-    platform1b.shapeColor = color(0, 255, 0)
-    platform1b.setCollider("rectangle", 0, 0, 250, 1)
+    platform_b = createSprite(550, 620, 250, 1)
+    platform_b.x = 350
+    platform_b.y = 550
+    platform_b.shapeColor = color(0, 255, 0)
+    platform_b.setCollider("rectangle", 0, 0, 250, 1)
 
     // upper first platform
-    platform1c = createSprite(550, 500, 250, 1)
-    platform1c.x = 350
-    platform1c.y = 700
-    platform1c.shapeColor = color(0, 255, 0)
-    platform1c.setCollider("rectangle", 0, 0, 250, 1)
+    platform_c = createSprite(550, 500, 250, 1)
+    platform_c.x = 350
+    platform_c.y = 700
+    platform_c.shapeColor = color(0, 255, 0)
+    platform_c.setCollider("rectangle", 0, 0, 250, 1)
     
     // upper second platform
-    platform1d = createSprite(900, 450, 250, 1)
-    platform1d.x = 700
-    platform1d.y = 700
-    platform1d.shapeColor = color(0, 255, 0)
-    platform1d.setCollider("rectangle", 0, 0, 250, 1)
+    platform_d = createSprite(900, 450, 250, 1)
+    platform_d.x = 700
+    platform_d.y = 700
+    platform_d.shapeColor = color(0, 255, 0)
+    platform_d.setCollider("rectangle", 0, 0, 250, 1)
     
     // lower second platform
-    platform1f = createSprite(900, 620, 250, 1)
-    platform1f.x = 950
-    platform1f.y = 700
-    platform1f.shapeColor = color(0, 255, 0)
-    platform1f.setCollider("rectangle", 0, 0, 250, 1)
+    platform_f = createSprite(900, 620, 250, 1)
+    platform_f.x = 950
+    platform_f.y = 700
+    platform_f.shapeColor = color(0, 255, 0)
+    platform_f.setCollider("rectangle", 0, 0, 250, 1)
     
     // end block
-    platform1e = createSprite(1350, 500, 300, 1)
-    platform1e.x = 1350
-    platform1e.y = 350
-    platform1e.shapeColor = color(0, 255, 0)
-    platform1e.setCollider("rectangle", 0, 0, 300, 1)
+    platform_e = createSprite(1350, 500, 300, 1)
+    platform_e.x = 1350
+    platform_e.y = 350
+    platform_e.shapeColor = color(0, 255, 0)
+    platform_e.setCollider("rectangle", 0, 0, 300, 1)
     
     // waterfall
     waterfall = createSprite(1175, 300, 50, 1000)
@@ -245,11 +245,11 @@ function setup3() {
 }   
 
 function clearStage3() {
-    platform1a.remove()
-    platform1b.remove()
-    platform1c.remove()
-    platform1d.remove()
-    platform1e.remove()
-    platform1f.remove()
+    platform_a.remove()
+    platform_b.remove()
+    platform_c.remove()
+    platform_d.remove()
+    platform_e.remove()
+    platform_f.remove()
     waterfall.remove()
 }

@@ -20,17 +20,17 @@ function draw() {
     if (keyIsDown(37) === true) {
         player.x -= 10
     }
-    if (keyWentDown(UP_ARROW) && player.collide(platform1a)) {
+    if (keyWentDown(UP_ARROW) && player.collide(platform_a)) {
         player.velocity.y -= 12;
-    } else if (keyWentDown(UP_ARROW) && player.collide(platform1b)) {
+    } else if (keyWentDown(UP_ARROW) && player.collide(platform_b)) {
         player.velocity.y -= 12;
-    } else if (keyWentDown(UP_ARROW) && player.collide(platform1c)) {
+    } else if (keyWentDown(UP_ARROW) && player.collide(platform_c)) {
         player.velocity.y -= 12;
-    } else if (keyWentDown(UP_ARROW) && player.collide(platform1d)) {
+    } else if (keyWentDown(UP_ARROW) && player.collide(platform_d)) {
         player.velocity.y -= 12;
-    } else if (keyWentDown(UP_ARROW) && player.collide(platform1e)) {
+    } else if (keyWentDown(UP_ARROW) && player.collide(platform_e)) {
         player.velocity.y -= 12;
-    } else if (keyWentDown(UP_ARROW) && player.collide(platform1f)) {
+    } else if (keyWentDown(UP_ARROW) && player.collide(platform_f)) {
         player.velocity.y -= 12;
     } else if (keyWentDown(UP_ARROW) && (stage2 === true) && (player.position.x > 925) && (player.position.x < 975)) {
         player.velocity.y -= 12;
