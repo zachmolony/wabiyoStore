@@ -15,15 +15,15 @@ function step() {
     if (stage1 === true) {
         if ((player.position.x > platform1a.position.x - (platform1a.width / 2)) && (player.position.x < platform1a.position.x + (platform1a.width / 2)) && (player.position.y < platform1a.position.y+10 && player.position.y > platform1a.position.y-10)) {
             player.velocity.y = 0;
-        } else if ((player.position.x > platform1b.position.x - (platform1b.width / 2)) && (player.position.x < platform1b.position.x + (platform1b.width / 2)) && (player.position.y === platform1b.position.y)) {
+        } else if ((player.position.x > platform1b.position.x - (platform1b.width / 2)) && (player.position.x < platform1b.position.x + (platform1b.width / 2)) && (player.position.y < platform1b.position.y+10 && player.position.y > platform1b.position.y-10)) {
             player.velocity.y = 0;
-        } else if ((player.position.x > platform1c.position.x - (platform1c.width / 2)) && (player.position.x < platform1c.position.x + (platform1c.width / 2)) && (player.position.y === platform1c.position.y)) {
+        } else if ((player.position.x > platform1c.position.x - (platform1c.width / 2)) && (player.position.x < platform1c.position.x + (platform1c.width / 2)) && (player.position.y < platform1c.position.y+10 && player.position.y > platform1c.position.y-10)) {
             player.velocity.y = 0;
-        } else if ((player.position.x > platform1d.position.x - (platform1d.width / 2)) && (player.position.x < platform1d.position.x + (platform1d.width / 2)) && (player.position.y === platform1d.position.y)) {
+        } else if ((player.position.x > platform1d.position.x - (platform1d.width / 2)) && (player.position.x < platform1d.position.x + (platform1d.width / 2)) && (player.position.y < platform1d.position.y+10 && player.position.y > platform1d.position.y-10)) {
             player.velocity.y = 0;
-        } else if ((player.position.x > platform1e.position.x - (platform1e.width / 2)) && (player.position.x < platform1e.position.x + (platform1e.width / 2)) && (player.position.y === platform1e.position.y)) {
+        } else if ((player.position.x > platform1e.position.x - (platform1e.width / 2)) && (player.position.x < platform1e.position.x + (platform1e.width / 2)) && (player.position.y < platform1e.position.y+10 && player.position.y > platform1e.position.y-10)) {
             player.velocity.y = 0;
-        } else if ((player.position.x > platform1f.position.x - (platform1f.width / 2)) && (player.position.x < platform1f.position.x + (platform1f.width / 2)) && (player.position.y === platform1f.position.y)) {
+        } else if ((player.position.x > platform1f.position.x - (platform1f.width / 2)) && (player.position.x < platform1f.position.x + (platform1f.width / 2)) && (player.position.y < platform1f.position.y+10 && player.position.y > platform1f.position.y-10)) {
             player.velocity.y = 0;
         } else {
             player.velocity.y += 1;
