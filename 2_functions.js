@@ -45,24 +45,3 @@ function step() {
         player.velocity.y = platform_c.velocity.y
     }
 }
-
-/*
-    
-    if (player.position.y > 500)
-    
-    
-    if (player.y < 500 && !player.collide(platform) && !player.collide(platform2)) {
-        player.velocity.y += 1;
-    }
-    else {
-        player.velocity.y = 0;
-    }
-}
-
-    if (!player1.collide(bar1) && !player1.collide(bar2) && !player1.collide(bar3) && !player1.collide(bar4)) {
-        player1.velocity.y += 1;
-    } else {
-        player1.velocity.y = 0;
-    }
-}
-    */
