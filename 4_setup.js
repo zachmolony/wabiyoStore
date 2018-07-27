@@ -5,7 +5,6 @@ function setup() {
     a.parent("main")
 
     // player
-
     player = createSprite(100, 526, 50, 50)
     player.velocity.y = PLAYER.velocity.y
     player.velocity.x = PLAYER.velocity.x
@@ -84,9 +83,9 @@ function setup1() {
     platform_e.setCollider("rectangle", 0, 0, 400, 1)
 }   
 
-// CLEAR STAGE 1 / 2
+// CLEAR STAGE 1
 
-function clearFirstStages() {
+function clearStage1() {
     platform_a.remove()
     platform_b.remove()
     platform_c.remove()
@@ -114,15 +113,6 @@ function setup2() {
     stage1 = false
     stage2 = true
     stage3 = false
-    
-    // environment
-    
-    platform_a.remove()
-    platform_b.remove()
-    platform_c.remove()
-    platform_d.remove()
-    platform_e.remove()
-    platform_f.remove()
     
     // spawn block
     platform_a = createSprite(100, 350, 400, 1)
@@ -167,7 +157,21 @@ function setup2() {
     platform_e.shapeColor = color(0, 255, 0)
     platform_e.setCollider("rectangle", 0, 0, 400, 1)
 
+    // chest
+    chest = createSprite(150, 625, 0, 30)
 }   
+
+// CLEAR STAGE 2
+
+function clearStage2() {
+    platform_a.remove()
+    platform_b.remove()
+    platform_c.remove()
+    platform_d.remove()
+    platform_e.remove()
+    platform_f.remove()   
+    chest.remove()
+}
 
 // SETUP STAGE 3
 
@@ -183,15 +187,6 @@ function setup3() {
     stage1 = false
     stage2 = false
     stage3 = true
-    
-    // environment 
-    
-    platform_a.remove()
-    platform_b.remove()
-    platform_c.remove()
-    platform_d.remove()
-    platform_e.remove()
-    platform_f.remove()
     
     // spawn block
     platform_a = createSprite(100, 550, 400, 1)
