@@ -158,7 +158,8 @@ function setup2() {
     platform_e.setCollider("rectangle", 0, 0, 400, 1)
 
     // chest
-    chest = createSprite(150, 625, 0, 30)
+    chest = createSprite(150, 625, 160, 170)
+    chest.addImage(CHEST.img)
 }   
 
 // CLEAR STAGE 2

@@ -18,6 +18,10 @@ const PLAYER =
         // a higher number will make the sprite fall faster
       }
 
+const CHEST = {
+    img: null,
+    src: 'assets/environment/chest_closed.png',
+    }
 //  variables
 
 var sprite = null
