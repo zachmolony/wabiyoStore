@@ -9,4 +9,6 @@ function preload() {
     button_down = loadImage("assets/environment/button_down.png")
     gate_closed = loadImage("assets/environment/gate_closed.png")
     gate_open = loadImage("assets/environment/gate_open.png")
+
+    block1a = loadImage("assets/environment/block1a_400.png")
 }

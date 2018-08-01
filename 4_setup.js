@@ -46,6 +46,7 @@ function setup1() {
     platform_a.y = 550
     platform_a.shapeColor = color(0, 255, 0)
     platform_a.setCollider("rectangle", 0, 0, 400, 1)
+    platform_a.addImage(block1a)
 
     // block F (a 2)
     platform_f = createSprite(510, 500, 50, 1)
