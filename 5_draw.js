@@ -18,7 +18,7 @@ function draw() {
     }
 
     // PLAYER CONTROLS
-    
+
     // left
     if (keyIsDown(37) === true) {
         player.x -= 10
@@ -39,7 +39,7 @@ function draw() {
     } else if (keyWentDown(UP_ARROW) && (stage2 === true) && (player.position.x > 925) && (player.position.x < 975)) {
         player.velocity.y -= 12;
     }
-    
+
     // right
     if (keyIsDown(39) === true) {
         player.x += 10
@@ -74,27 +74,27 @@ function draw() {
         setup2()
         back = true
     }
- 
+
     // pickup key
     if (key_check === true && player.position.x === 80 && player.overlap(keys)) {
         //keys.remove();
         keys.position.x = 30;
         keys.position.y = 30;
     }
-    
+
     // CHEST OPENING
     if (stage2 === true && player.overlap(chest) && keyIsDown(69)) {
         chest.addImage(open);
         setupKey();
     }
-    
+
     // BUTTON PRESSING
     if (stage3 === true && button_pressed === false && player.overlap(button) & player.position.x > 908 && player.position.x < 920) {
         button.addImage(button_down);
         button_pressed = true;
         waterfall.remove();
     }
-    
+
     // WATERFALL BARRIER
     if (stage3 === true && player.overlap(waterfall) && button_pressed === false) {
         console.log("waterfall")

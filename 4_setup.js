@@ -1,5 +1,5 @@
 function setup() {
-    
+
     //var a = createCanvas(width, height)
     var a = createCanvas(1500, 800)
     a.parent("main")
@@ -14,16 +14,16 @@ function setup() {
     player.scale = PLAYER.scale
     player.restitution = PLAYER.restitution
     player.gravity = PLAYER.gravity
-    
+
     setup1()
 }
 
 // SETUP STAGE 1
 
 function setup1() {
-    
+
     // reset player
-    
+
     if (stage2 === true) {
         player.x = 1500
         player.y = 328
@@ -31,9 +31,9 @@ function setup1() {
         player.x = 100
         player.y = 526
     }
-    
+
     // bool 
-    
+
     stage1 = true
     stage2 = false
     stage3 = false
@@ -53,7 +53,7 @@ function setup1() {
     platform_f.y = 500
     platform_f.shapeColor = color(0, 255, 0)
     platform_f.setCollider("rectangle", 0, 0, 50, 1)
-    
+
     // block B
     platform_b = createSprite(670, 450, 50, 1)
     platform_b.x = 670
@@ -67,21 +67,21 @@ function setup1() {
     platform_c.y = 400
     platform_c.shapeColor = color(0, 255, 0)
     platform_c.setCollider("rectangle", 0, 0, 50, 1)
-    
+
     // block D
     platform_d = createSprite(990, 350, 50, 1)
     platform_d.x = 990
     platform_d.y = 350
     platform_d.shapeColor = color(0, 400, 0)
     platform_d.setCollider("rectangle", 0, 0, 50, 1)
-    
+
     // block E
     platform_e = createSprite(1350, 350, 400, 1)
     platform_e.x = 1350
     platform_e.y = 350
     platform_e.shapeColor = color(0, 255, 0)
     platform_e.setCollider("rectangle", 0, 0, 400, 1)
-}   
+}
 
 // CLEAR STAGE 1
 
@@ -91,7 +91,7 @@ function clearStage1() {
     platform_c.remove()
     platform_d.remove()
     platform_e.remove()
-    platform_f.remove()   
+    platform_f.remove()
 }
 
 // SETUP STAGE 2
@@ -99,7 +99,7 @@ function clearStage1() {
 function setup2() {
 
     // reset player
-    
+
     if (stage3 === true) {
         player.x = 1250
         player.y = 526
@@ -107,13 +107,13 @@ function setup2() {
         player.x = 10
         player.y = 328
     }
-    
+
     // bool
-    
+
     stage1 = false
     stage2 = true
     stage3 = false
-    
+
     // spawn block
     platform_a = createSprite(100, 350, 400, 1)
     platform_a.x = 100
@@ -135,21 +135,21 @@ function setup2() {
     platform_c.velocity.y = -4
     platform_c.shapeColor = color(0, 255, 0)
     platform_c.setCollider("rectangle", 0, 0, 50, 1)
-    
+
     // middle block
     platform_d = createSprite(700, 650, 200, 1)
     platform_d.x = 700
     platform_d.y = 700
     platform_d.shapeColor = color(0, 255, 0)
     platform_d.setCollider("rectangle", 0, 0, 200, 1)
-    
+
     // last platform
     platform_f = createSprite(980, 600, 50, 1)
     platform_f.x = 950
     platform_f.y = 700
     platform_f.shapeColor = color(0, 255, 0)
     platform_f.setCollider("rectangle", 0, 0, 50, 1)
-    
+
     // end block
     platform_e = createSprite(1350, 550, 400, 1)
     platform_e.x = 1350
@@ -160,7 +160,7 @@ function setup2() {
     // chest
     chest = createSprite(150, 622, 60, 64)
     chest.addImage(CHEST.img)
-}   
+}
 
 // CLEAR STAGE 2
 
@@ -170,7 +170,7 @@ function clearStage2() {
     platform_c.remove()
     platform_d.remove()
     platform_e.remove()
-    platform_f.remove()   
+    platform_f.remove()
     chest.remove()
 }
 
@@ -179,16 +179,16 @@ function clearStage2() {
 function setup3() {
 
     // reset player
-    
+
     player.x = 20
     player.y = 525
-    
+
     // bool
-    
+
     stage1 = false
     stage2 = false
     stage3 = true
-    
+
     // spawn block
     platform_a = createSprite(100, 550, 400, 1)
     platform_a.x = 100
@@ -209,43 +209,43 @@ function setup3() {
     platform_c.y = 700
     platform_c.shapeColor = color(0, 255, 0)
     platform_c.setCollider("rectangle", 0, 0, 250, 1)
-    
+
     // upper second platform
     platform_d = createSprite(900, 450, 250, 1)
     platform_d.x = 700
     platform_d.y = 700
     platform_d.shapeColor = color(0, 255, 0)
     platform_d.setCollider("rectangle", 0, 0, 250, 1)
-    
+
     // lower second platform
     platform_f = createSprite(900, 620, 250, 1)
     platform_f.x = 950
     platform_f.y = 700
     platform_f.shapeColor = color(0, 255, 0)
     platform_f.setCollider("rectangle", 0, 0, 250, 1)
-    
+
     // end block
     platform_e = createSprite(1350, 500, 300, 1)
     platform_e.x = 1350
     platform_e.y = 350
     platform_e.shapeColor = color(0, 255, 0)
     platform_e.setCollider("rectangle", 0, 0, 300, 1)
-    
+
     // waterfall
     waterfall = createSprite(1175, 300, 50, 1000)
     waterfall.x = 1175
     waterfall.y = 100
     waterfall.shapeColor = color(0, 255, 0)
     waterfall.setCollider("rectangle", 0, 0, 50, 1000)
-    
+
     // sign
     sign = createSprite(855, 588, 39, 60)
     sign.addImage(signimg)
-    
+
     // buttom
     button = createSprite(910, 615, 180, 60)
     button.addImage(button_up)
-}   
+}
 
 function clearStage3() {
     platform_a.remove()
