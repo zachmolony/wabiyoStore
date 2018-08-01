@@ -165,6 +165,10 @@ function setup2() {
         chest = createSprite(150, 622, 60, 64)
         chest.addImage(open)
     }
+    
+    // sign
+    sign = createSprite(65, 619, 39, 60)
+    sign.addImage(signimg)
 }
 
 // CLEAR STAGE 2
@@ -177,6 +181,7 @@ function clearStage2() {
     platform_e.remove()
     platform_f.remove()
     chest.remove()
+    sign.remove()
 }
 
 // SETUP STAGE 3
@@ -244,8 +249,8 @@ function setup3() {
     }
 
     // sign
-    sign = createSprite(855, 588, 39, 60)
-    sign.addImage(signimg)
+    sign = createSprite(970, 588, 39, 60)
+    sign.addImage(signimg2)
 
     // buttom
     button = createSprite(910, 615, 180, 60)
