@@ -4,17 +4,6 @@ function setup() {
     var a = createCanvas(1500, 800)
     a.parent("main")
 
-    // player
-    player = createSprite(100, 526, 5, 5)
-    player.velocity.y = PLAYER.velocity.y
-    player.velocity.x = PLAYER.velocity.x
-    player.x = 100
-    player.y = 526
-    player.addImage(PLAYER.img)
-    player.scale = PLAYER.scale
-    player.restitution = PLAYER.restitution
-    player.gravity = PLAYER.gravity
-
     setup1()
 }
 
@@ -22,18 +11,7 @@ function setup() {
 
 function setup1() {
 
-    // reset player
-
-    if (stage2 === true) {
-        player.x = 1500
-        player.y = 328
-    } else {
-        player.x = 100
-        player.y = 526
-    }
-
     // bool 
-
     stage1 = true
     stage2 = false
     stage3 = false
@@ -54,6 +32,7 @@ function setup1() {
     platform_f.y = 500
     platform_f.shapeColor = color(0, 255, 0)
     platform_f.setCollider("rectangle", 0, 0, 50, 1)
+    platform_f.addImage(platform)
 
     // block B
     platform_b = createSprite(670, 450, 50, 1)
@@ -61,6 +40,7 @@ function setup1() {
     platform_b.y = 450
     platform_b.shapeColor = color(0, 255, 0)
     platform_b.setCollider("rectangle", 0, 0, 50, 1)
+    platform_b.addImage(platform)
 
     // block C
     platform_c = createSprite(830, 400, 50, 1)
@@ -68,6 +48,7 @@ function setup1() {
     platform_c.y = 400
     platform_c.shapeColor = color(0, 255, 0)
     platform_c.setCollider("rectangle", 0, 0, 50, 1)
+    platform_c.addImage(platform)
 
     // block D
     platform_d = createSprite(990, 350, 50, 1)
@@ -75,6 +56,7 @@ function setup1() {
     platform_d.y = 350
     platform_d.shapeColor = color(0, 400, 0)
     platform_d.setCollider("rectangle", 0, 0, 50, 1)
+    platform_d.addImage(platform)
 
     // block E
     platform_e = createSprite(1350, 350, 400, 1)
@@ -82,6 +64,28 @@ function setup1() {
     platform_e.y = 350
     platform_e.shapeColor = color(0, 255, 0)
     platform_e.setCollider("rectangle", 0, 0, 400, 1)
+    platform_e.addImage(block1a)
+    
+    // player
+    player = createSprite(100, 526, 5, 5)
+    player.velocity.y = PLAYER.velocity.y
+    player.velocity.x = PLAYER.velocity.x
+    player.x = 100
+    player.y = 526
+    player.scale = PLAYER.scale
+    player.restitution = PLAYER.restitution
+    player.gravity = PLAYER.gravity
+    player.addImage(PLAYER.img)
+    
+    // reset player
+
+    if (stage2 === true) {
+        player.x = 1500
+        player.y = 328
+    } else {
+        player.x = 100
+        player.y = 526
+    }
 }
 
 // CLEAR STAGE 1
@@ -93,21 +97,12 @@ function clearStage1() {
     platform_d.remove()
     platform_e.remove()
     platform_f.remove()
+    player.remove()
 }
 
 // SETUP STAGE 2
 
 function setup2() {
-
-    // reset player
-
-    if (stage3 === true) {
-        player.x = 1250
-        player.y = 526
-    } else {
-        player.x = 10
-        player.y = 328
-    }
 
     // bool
 
@@ -136,6 +131,8 @@ function setup2() {
     platform_c.velocity.y = -4
     platform_c.shapeColor = color(0, 255, 0)
     platform_c.setCollider("rectangle", 0, 0, 50, 1)
+    platform_c.addImage(platform)
+
 
     // middle block
     platform_d = createSprite(700, 650, 200, 1)
@@ -150,6 +147,7 @@ function setup2() {
     platform_f.y = 700
     platform_f.shapeColor = color(0, 255, 0)
     platform_f.setCollider("rectangle", 0, 0, 50, 1)
+    platform_f.addImage(platform)
 
     // end block
     platform_e = createSprite(1350, 550, 400, 1)
@@ -170,6 +168,27 @@ function setup2() {
     // sign
     sign = createSprite(65, 619, 39, 60)
     sign.addImage(signimg)
+    
+    // player
+    player = createSprite(100, 526, 5, 5)
+    player.velocity.y = PLAYER.velocity.y
+    player.velocity.x = PLAYER.velocity.x
+    player.x = 100
+    player.y = 526
+    player.scale = PLAYER.scale
+    player.restitution = PLAYER.restitution
+    player.gravity = PLAYER.gravity
+    player.addImage(PLAYER.img)
+    
+    // reset player
+
+    if (stage3 === true) {
+        player.x = 1250
+        player.y = 526
+    } else {
+        player.x = 10
+        player.y = 328
+    }
 }
 
 // CLEAR STAGE 2
@@ -183,16 +202,12 @@ function clearStage2() {
     platform_f.remove()
     chest.remove()
     sign.remove()
+    player.remove()
 }
 
 // SETUP STAGE 3
 
 function setup3() {
-
-    // reset player
-
-    player.x = 20
-    player.y = 525
 
     // bool
 
@@ -213,6 +228,7 @@ function setup3() {
     platform_b.y = 550
     platform_b.shapeColor = color(0, 255, 0)
     platform_b.setCollider("rectangle", 0, 0, 250, 1)
+    platform_b.addImage(wooden_platform_img)
 
     // upper first platform
     platform_c = createSprite(550, 500, 250, 1)
@@ -220,6 +236,7 @@ function setup3() {
     platform_c.y = 700
     platform_c.shapeColor = color(0, 255, 0)
     platform_c.setCollider("rectangle", 0, 0, 250, 1)
+    platform_c.addImage(wooden_platform_img)
 
     // upper second platform
     platform_d = createSprite(900, 450, 250, 1)
@@ -227,6 +244,7 @@ function setup3() {
     platform_d.y = 700
     platform_d.shapeColor = color(0, 255, 0)
     platform_d.setCollider("rectangle", 0, 0, 250, 1)
+    platform_d.addImage(wooden_platform_img)
 
     // lower second platform
     platform_f = createSprite(900, 620, 250, 1)
@@ -234,6 +252,7 @@ function setup3() {
     platform_f.y = 700
     platform_f.shapeColor = color(0, 255, 0)
     platform_f.setCollider("rectangle", 0, 0, 250, 1)
+    platform_f.addImage(wooden_platform_img)
 
     // end block
     platform_e = createSprite(1350, 500, 300, 1)
@@ -242,11 +261,14 @@ function setup3() {
     platform_e.shapeColor = color(0, 255, 0)
     platform_e.setCollider("rectangle", 0, 0, 300, 1)
 
+    // window
+    window3 = createSprite(1175, 281, 180, 60)
+    window3.addImage(windowimg)
+    
     // waterfall
     if (button_pressed === false) {
-        waterfall = createSprite(1175, 300, 50, 1000)
-        waterfall.x = 1175
-        waterfall.y = 100
+        waterfall = createSprite(1175, 500, 50, 1000)
+        waterfall.addImage(waterfallimg)
     }
 
     // sign
@@ -256,10 +278,26 @@ function setup3() {
     // buttom
     button = createSprite(910, 615, 180, 60)
     button.addImage(button_up)
-
+    
     //gate
     gate = createSprite(1350, 435, 180, 60)
     gate.addImage(gate_closed)
+    
+    // player
+    player = createSprite(100, 526, 5, 5)
+    player.velocity.y = PLAYER.velocity.y
+    player.velocity.x = PLAYER.velocity.x
+    player.x = 100
+    player.y = 526
+    player.scale = PLAYER.scale
+    player.restitution = PLAYER.restitution
+    player.gravity = PLAYER.gravity
+    player.addImage(PLAYER.img)
+
+    // reset player
+
+    player.x = 20
+    player.y = 525
 }
 
 function clearStage3() {
@@ -273,6 +311,8 @@ function clearStage3() {
     sign.remove()
     button.remove()
     gate.remove()
+    player.remove()
+    window3.remove()
 }
 
 function openGate() {
