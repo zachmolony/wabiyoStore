@@ -237,6 +237,14 @@ function setup3() {
     waterfall.y = 100
     waterfall.shapeColor = color(0, 255, 0)
     waterfall.setCollider("rectangle", 0, 0, 50, 1000)
+    
+    // sign
+    sign = createSprite(855, 588, 39, 60)
+    sign.addImage(signimg)
+    
+    // buttom
+    button = createSprite(910, 615, 180, 60)
+    button.addImage(button_up)
 }   
 
 function clearStage3() {
@@ -247,6 +255,8 @@ function clearStage3() {
     platform_e.remove()
     platform_f.remove()
     waterfall.remove()
+    sign.remove()
+    button.remove()
 }
 
 function setupKey() {

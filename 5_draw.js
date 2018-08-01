@@ -88,8 +88,15 @@ function draw() {
         setupKey();
     }
     
+    // BUTTON PRESSING
+    if (stage3 === true && button_pressed === false && player.overlap(button) & player.position.x > 908 && player.position.x < 920) {
+        button.addImage(button_down);
+        button_pressed = true;
+        waterfall.remove();
+    }
+    
     // WATERFALL BARRIER
-    if (stage3 === true && player.overlap(waterfall)) {
+    if (stage3 === true && player.overlap(waterfall) && button_pressed === false) {
         console.log("waterfall")
         player.position.x = 1150;
         player.velocity.y = 10;
@@ -102,7 +109,6 @@ function draw() {
     player.position.y = player.y;
 
     drawSprites();
-    
 }
 
 function mousePressed() {

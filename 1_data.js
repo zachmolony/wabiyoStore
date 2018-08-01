@@ -35,3 +35,4 @@ var stage3 = false
 var back = false
 
 var key_check = false
+var button_pressed = false
