@@ -14,8 +14,6 @@ function step() {
 
     // GRAVITY
 
-    // THIS NEEDS TO BE CHANGED SO THAT ITS NOT EVERY FUCKING TIME THEY TOUCH ONLY WHEN THE PLAYER IS ON TOP OF THE PLATFORM
-
     if ((player.position.x > platform_a.position.x - (platform_a.width / 2)) && (player.position.x < platform_a.position.x + (platform_a.width / 2)) && (player.position.y < platform_a.position.y + 10 && player.position.y > platform_a.position.y - 10)) {
         player.velocity.y = 0;
     } else if ((player.position.x > platform_b.position.x - (platform_b.width / 2)) && (player.position.x < platform_b.position.x + (platform_b.width / 2)) && (player.position.y < platform_b.position.y + 10 && player.position.y > platform_b.position.y - 10)) {

@@ -74,15 +74,28 @@ function draw() {
         setup2()
         back = true
     }
+ 
+    // pickup key
+    if (key_check === true && player.position.x === 80 && player.overlap(keys)) {
+        //keys.remove();
+        keys.position.x = 30;
+        keys.position.y = 30;
+    }
     
+    // CHEST OPENING
+    if (stage2 === true && player.overlap(chest) && keyIsDown(69)) {
+        chest.addImage(open);
+        setupKey();
+    }
+
     // redraw everything
     step();
 
     player.position.x = player.x;
     player.position.y = player.y;
 
-    drawSprites()
-
+    drawSprites();
+    
 }
 
 function mousePressed() {

@@ -22,9 +22,8 @@ const CHEST = {
     img: null,
     src: 'assets/environment/chest_closed.png',
     }
-//  variables
 
-var sprite = null
+//  variables
 
 var width = 1500
 var height = 800
@@ -34,3 +33,5 @@ var stage2 = false
 var stage3 = false
 
 var back = false
+
+var key_check = false

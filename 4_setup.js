@@ -5,7 +5,7 @@ function setup() {
     a.parent("main")
 
     // player
-    player = createSprite(100, 526, 50, 50)
+    player = createSprite(100, 526, 5, 5)
     player.velocity.y = PLAYER.velocity.y
     player.velocity.x = PLAYER.velocity.x
     player.x = 100
@@ -158,7 +158,7 @@ function setup2() {
     platform_e.setCollider("rectangle", 0, 0, 400, 1)
 
     // chest
-    chest = createSprite(150, 625, 160, 170)
+    chest = createSprite(150, 622, 60, 64)
     chest.addImage(CHEST.img)
 }   
 
@@ -237,7 +237,6 @@ function setup3() {
     waterfall.y = 100
     waterfall.shapeColor = color(0, 255, 0)
     waterfall.setCollider("rectangle", 0, 0, 50, 1000)
-
 }   
 
 function clearStage3() {
@@ -248,4 +247,10 @@ function clearStage3() {
     platform_e.remove()
     platform_f.remove()
     waterfall.remove()
+}
+
+function setupKey() {
+    keys = createSprite(72, 620, 30, 19);
+    keys.addImage(keyimg);
+    key_check = true;
 }
