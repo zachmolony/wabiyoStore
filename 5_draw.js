@@ -53,7 +53,7 @@ function draw() {
         // if the user goes back past stage 1
         clear()
         clearStage1()
-        setup2()
+        setup3()
         back = true
     } else if ((stage2 == true) && (player.position.x > 1500)) {
         // if the user goes past stage 2
@@ -76,14 +76,16 @@ function draw() {
     }
 
     // pickup key
-    if (key_check === true && player.position.x === 80 && player.overlap(keys)) {
+    if (key_check === true && player.overlap(keys) && keyIsDown(69) === true) {
         //keys.remove();
+        key_check = true
         keys.position.x = 30;
         keys.position.y = 30;
     }
 
     // CHEST OPENING
     if (stage2 === true && player.overlap(chest) && keyIsDown(69)) {
+        chestIsOpen = true;
         chest.addImage(open);
         setupKey();
     }
@@ -100,6 +102,13 @@ function draw() {
         console.log("waterfall")
         player.position.x = 1150;
         player.velocity.y = 10;
+    }
+    
+    // gate opening
+    if (stage3 === true && key_check === true && button_pressed === true && player.overlap(gate) && keyIsDown(69)) {
+        openGate();
+        //shirt = createSprite(855, 588, 39, 60)
+        //shirt.addImage(shirt)
     }
 
     // redraw everything

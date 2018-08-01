@@ -34,3 +34,4 @@ var back = false
 
 var key_check = false
 var button_pressed = false
+var chestIsOpen = false

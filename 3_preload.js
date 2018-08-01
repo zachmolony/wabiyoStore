@@ -6,4 +6,6 @@ function preload() {
     signimg = loadImage("assets/environment/sign_question.png")
     button_up = loadImage("assets/environment/button_up.png")
     button_down = loadImage("assets/environment/button_down.png")
+    gate_closed = loadImage("assets/environment/gate_closed.png")
+    gate_open = loadImage("assets/environment/gate_open.png")
 }

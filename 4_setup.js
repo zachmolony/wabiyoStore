@@ -157,9 +157,14 @@ function setup2() {
     platform_e.shapeColor = color(0, 255, 0)
     platform_e.setCollider("rectangle", 0, 0, 400, 1)
 
-    // chest
-    chest = createSprite(150, 622, 60, 64)
-    chest.addImage(CHEST.img)
+    // chest closed
+    if (chestIsOpen === false) {
+        chest = createSprite(150, 622, 60, 64)
+        chest.addImage(CHEST.img)
+    } else if (chestIsOpen === true) {
+        chest = createSprite(150, 622, 60, 64)
+        chest.addImage(open)
+    }
 }
 
 // CLEAR STAGE 2
@@ -245,6 +250,10 @@ function setup3() {
     // buttom
     button = createSprite(910, 615, 180, 60)
     button.addImage(button_up)
+
+    //gate
+    gate = createSprite(1350, 435, 180, 60)
+    gate.addImage(gate_closed)
 }
 
 function clearStage3() {
@@ -257,10 +266,15 @@ function clearStage3() {
     waterfall.remove()
     sign.remove()
     button.remove()
+    gate.remove()
 }
 
 function setupKey() {
     keys = createSprite(72, 620, 30, 19);
     keys.addImage(keyimg);
     key_check = true;
+}
+
+function openGate() {
+    gate.addImage(gate_open)
 }
