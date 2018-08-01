@@ -1,6 +1,6 @@
 function draw() {
     clear()
-    background(10)
+    background(0)
 
     // RESPAWNING
     if ((player.position.y > 3000) && (back === false)) {
@@ -53,7 +53,7 @@ function draw() {
         // if the user goes back past stage 1
         clear()
         clearStage1()
-        setup2()
+        setup3()
         back = true
     } else if ((stage2 == true) && (player.position.x > 1500)) {
         // if the user goes past stage 2
