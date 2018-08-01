@@ -87,6 +87,13 @@ function draw() {
         chest.addImage(open);
         setupKey();
     }
+    
+    // WATERFALL BARRIER
+    if (stage3 === true && player.overlap(waterfall)) {
+        console.log("waterfall")
+        player.position.x = 1150;
+        player.velocity.y = 10;
+    }
 
     // redraw everything
     step();
