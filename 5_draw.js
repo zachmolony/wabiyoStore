@@ -53,7 +53,7 @@ function draw() {
         // if the user goes back past stage 1
         clear()
         clearStage1()
-        setup3()
+        setup2()
         back = true
     } else if ((stage2 == true) && (player.position.x > 1500)) {
         // if the user goes past stage 2
@@ -74,20 +74,20 @@ function draw() {
         setup2()
         back = true
     }
-
+/*
     // pickup key
     if (key_check === true && player.overlap(keys) && keyIsDown(69) === true) {
-        //keys.remove();
-        key_check = true
-        keys.position.x = 30;
-        keys.position.y = 30;
+        console.log("key is picked up")
     }
-
+*/
     // CHEST OPENING
     if (stage2 === true && player.overlap(chest) && keyIsDown(69)) {
         chestIsOpen = true;
         chest.addImage(open);
-        setupKey();
+        // pickup key
+        key_check = true
+        key = createSprite(30, 30, 39, 60)
+        key.addImage(keyimg)
     }
 
     // BUTTON PRESSING

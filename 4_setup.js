@@ -237,11 +237,11 @@ function setup3() {
     platform_e.setCollider("rectangle", 0, 0, 300, 1)
 
     // waterfall
-    waterfall = createSprite(1175, 300, 50, 1000)
-    waterfall.x = 1175
-    waterfall.y = 100
-    waterfall.shapeColor = color(0, 255, 0)
-    waterfall.setCollider("rectangle", 0, 0, 50, 1000)
+    if (button_pressed === false) {
+        waterfall = createSprite(1175, 300, 50, 1000)
+        waterfall.x = 1175
+        waterfall.y = 100
+    }
 
     // sign
     sign = createSprite(855, 588, 39, 60)
@@ -267,12 +267,6 @@ function clearStage3() {
     sign.remove()
     button.remove()
     gate.remove()
-}
-
-function setupKey() {
-    keys = createSprite(72, 620, 30, 19);
-    keys.addImage(keyimg);
-    key_check = true;
 }
 
 function openGate() {
