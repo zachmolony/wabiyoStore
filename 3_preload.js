@@ -10,6 +10,7 @@ function preload() {
     gate_closed = loadImage("assets/environment/gate_closed.png")
     gate_open = loadImage("assets/environment/gate_open.png")
 
+    // environment
     block1a = loadImage("assets/environment/block1.png")
     platform = loadImage("assets/environment/platform.png")
     waterfallimg = loadImage("assets/environment/waterfall.png")
