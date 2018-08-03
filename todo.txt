@@ -1,0 +1,7 @@
+features:
+- store 
+- beattapes / music
+- radio station (waviyo.fm)
+- drawings / art gallery  (tapersty banners)
+- photo gallery / videos
+- teaser for the tv show (episode 1) [literally just the title sequence or something]
