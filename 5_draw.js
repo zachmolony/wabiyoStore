@@ -74,12 +74,7 @@ function draw() {
         setup2()
         back = true
     }
-/*
-    // pickup key
-    if (key_check === true && player.overlap(keys) && keyIsDown(69) === true) {
-        console.log("key is picked up")
-    }
-*/
+    
     // CHEST OPENING
     if (stage2 === true && player.overlap(chest) && keyIsDown(69)) {
         chestIsOpen = true;
