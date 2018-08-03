@@ -1,10 +1,10 @@
-# Wabiyo Clothing Store
+# Wabiyo Site   
 
-Clothing store for creative collective wabiyo.
+Website and clothing store for creative collective wabiyo.
 
-The store is a dungeon platformer game, coded in javascript using p5.js, where the customer plays the game to choose their item and put it in their basket. 
+The store is a dungeon platformer game, coded in javascript using p5.js, where the customer plays the game to obtain their item and put it in their basket. 
 
-Currently still under development.
+Currently under development.
 
 
 
