@@ -2,6 +2,7 @@
 <html>
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
 
 <head>
     <title>wabiyo store</title>
@@ -10,7 +11,7 @@
 
 <style>
     html * {
-        background-color: black;
+        background-color: transparent;
     }
 
     .lookbook {
@@ -27,43 +28,69 @@
         text-align: center;
         font-family: 'VT323', monospace;
     }
-    
+
     .footer {
         margin-top: 20px;
         background-color: black;
         padding: 10px;
         text-align: center;
     }
-</style>
+    
+    .textLogo {
+        display: table;
+    }
+    
+    a-scene {
+        z-index: -1;
+    }
 
+</style>
 
 <div id="content">
 
     <div class="mobile_device_480px">
 
         <body>
-            <div class="logo">
-                <a href="index.html">
-                    <img src = "assets/blacked/logo.jpg" width="70">
-                </a>
-            </div>
 
+            <a-scene>
+                <a-assets>
+                    <img src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" id="grid" crossorigin="anonymous">
+                    <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
+                    <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
+                    <a-asset-item id="dawningFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2FdawningOfANewDayRegular.typeface.json?1490305922844"></a-asset-item>
+                    <a-asset-item id="exoFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150"></a-asset-item>
+                    <a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
+                </a-assets>
+
+                <a-entity position="-3 1 -6" rotation="5 0 0"></a-entity>
+                    <a-entity rotation="0 0 5" position="0 2 0.2" text-geometry="value: Virtual Reality; font: #dawningFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;" material="color:lavenderblush; metalness:1; roughness: 0; sphericalEnvMap: #pink;"></a-entity>
+
+                    <a-entity geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0" material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;"></a-entity>
+
+
+                    <a-entity light="color: white; intensity: 1.5" position="5 5 5"></a-entity>
+                    <a-entity light="color: white; intensity: 0.5" position="-5 5 15"></a-entity>
+                    <a-entity light="color: white; type: ambient;"></a-entity>
+
+                    <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+            </a-scene>
+            <br><br><br>
             <div class="textLogo">
                 <a href="index.html">
-                    <img src="assets/wabiyo_spin.gif"S width="1000">
+                    <img src="assets/wabiyo_spin.gif" width="400">
                 </a>
             </div>
 
             <div class="store">
                 <div>
-                    <img src="assets/shirts/brian_black.png" width="900" height="900">
+                    <img src="assets/shirts/brian_black.png" width="400">
                     <p style="font-size:6vw">BRIAN SHIRT £15</p><br>
                 </div>
                 <div>
-                    <img src="assets/shirts/tour%20white.png" width="900" height="900">
+                    <img src="assets/shirts/tour%20white.png" width="400">
                     <p style="font-size:6vw">TOUR SHIRT £15</p><br>
                     <div>
-                        <img src="assets/shirts/UNDERDOG%20PSYCHOSIS.png" width="900" height="900">
+                        <img src="assets/shirts/UNDERDOG%20PSYCHOSIS.png" width="400">
                         <p style="font-size:6vw">UNDERDOG PSYCHOSIS SHIRT £15</p><br>
                     </div>
                 </div>
