@@ -79,10 +79,12 @@ function setup1() {
     
     // reset player
 
-    if (stage2 === true) {
-        player.x = 1500
+    if (back === true) {
+        console.log("back")
+        player.position.x = 1500
         player.y = 328
     } else {
+        console.log("not back")
         player.x = 100
         player.y = 526
     }
@@ -116,6 +118,7 @@ function setup2() {
     platform_a.y = 350
     platform_a.shapeColor = color(0, 255, 0)
     platform_a.setCollider("rectangle", 0, 0, 400, 1)
+    //platform_a.addImage()
 
     // block below spawn
     platform_b = createSprite(100, 650, 400, 1)
@@ -123,6 +126,7 @@ function setup2() {
     platform_b.y = 550
     platform_b.shapeColor = color(0, 255, 0)
     platform_b.setCollider("rectangle", 0, 0, 400, 1)
+    platform_b.addImage(block1a)
 
     // moving platform
     platform_c = createSprite(450, 650, 50, 1)
@@ -140,6 +144,7 @@ function setup2() {
     platform_d.y = 700
     platform_d.shapeColor = color(0, 255, 0)
     platform_d.setCollider("rectangle", 0, 0, 200, 1)
+    platform_d.addImage(wooden_platform_img)
 
     // last platform
     platform_f = createSprite(980, 600, 50, 1)
@@ -155,6 +160,7 @@ function setup2() {
     platform_e.y = 350
     platform_e.shapeColor = color(0, 255, 0)
     platform_e.setCollider("rectangle", 0, 0, 400, 1)
+    platform_e.addImage(block1a)
 
     // chest closed
     if (chestIsOpen === false) {
@@ -182,7 +188,7 @@ function setup2() {
     
     // reset player
 
-    if (stage3 === true) {
+    if (back === true) {
         player.x = 1250
         player.y = 526
     } else {
@@ -221,6 +227,7 @@ function setup3() {
     platform_a.y = 350
     platform_a.shapeColor = color(0, 255, 0)
     platform_a.setCollider("rectangle", 0, 0, 400, 1)
+    platform_a.addImage(block1a)
 
     // lower first platform
     platform_b = createSprite(550, 620, 250, 1)
@@ -255,11 +262,12 @@ function setup3() {
     platform_f.addImage(wooden_platform_img)
 
     // end block
-    platform_e = createSprite(1350, 500, 300, 1)
+    platform_e = createSprite(1400, 500, 400, 1)
     platform_e.x = 1350
     platform_e.y = 350
     platform_e.shapeColor = color(0, 255, 0)
     platform_e.setCollider("rectangle", 0, 0, 300, 1)
+    platform_e.addImage(block1a)
 
     // window
     window3 = createSprite(1175, 281, 180, 60)

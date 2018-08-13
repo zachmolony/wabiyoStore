@@ -43,36 +43,31 @@ function draw() {
     // right
     if (keyIsDown(39) === true) {
         player.x += 10
-    } else if ((stage1 == true) && (player.position.x > 1500)) {
+    } else if ((stage1 === true) && (player.position.x > 1500)) {
         // if the user goes past stage 1
+        back = false
         clear()
         clearStage1()
         setup2()
-        back = false
-    } else if ((stage1 == true) && (player.position.x < 0)) {
-        // if the user goes back past stage 1
-        clear()
-        clearStage1()
-        setup3()
-        back = true
-    } else if ((stage2 == true) && (player.position.x > 1500)) {
+    } else if ((stage2 === true) && (player.position.x > 1500)) {
         // if the user goes past stage 2
-        clear()
         back = false
+        clear()
         clearStage2()
         setup3()
-    } else if ((stage2 == true) && (player.position.x < 0)) {
+    } else if ((stage2 === true) && (player.position.x < 0)) {
         // if the user goes back past stage 2
+        back = true
         clear()
         clearStage2()
         setup1()
-        back = true
-    } else if ((stage3 == true) && (player.position.x < 0)) {
+        console.log("back is true")
+    } else if ((stage3 === true) && (player.position.x < 0)) {
         // if the user goes back past stage 3
+        back = true;
         clear()
         clearStage3()
         setup2()
-        back = true
     }
     
     // CHEST OPENING
