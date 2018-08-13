@@ -80,11 +80,9 @@ function setup1() {
     // reset player
 
     if (back === true) {
-        console.log("back")
-        player.position.x = 1500
+        player.x = 1500
         player.y = 328
     } else {
-        console.log("not back")
         player.x = 100
         player.y = 526
     }
@@ -118,7 +116,7 @@ function setup2() {
     platform_a.y = 350
     platform_a.shapeColor = color(0, 255, 0)
     platform_a.setCollider("rectangle", 0, 0, 400, 1)
-    //platform_a.addImage()
+    platform_a.addImage(block1a)
 
     // block below spawn
     platform_b = createSprite(100, 650, 400, 1)
@@ -176,11 +174,11 @@ function setup2() {
     sign.addImage(signimg)
     
     // player
-    player = createSprite(100, 526, 5, 5)
+    player = createSprite(10, 328, 5, 5)
     player.velocity.y = PLAYER.velocity.y
     player.velocity.x = PLAYER.velocity.x
-    player.x = 100
-    player.y = 526
+    player.x = 10
+    player.y = 328
     player.scale = PLAYER.scale
     player.restitution = PLAYER.restitution
     player.gravity = PLAYER.gravity
@@ -189,11 +187,8 @@ function setup2() {
     // reset player
 
     if (back === true) {
-        player.x = 1250
+        player.x = 1490
         player.y = 526
-    } else {
-        player.x = 10
-        player.y = 328
     }
 }
 

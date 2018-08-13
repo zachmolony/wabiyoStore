@@ -64,7 +64,7 @@ function draw() {
         console.log("back is true")
     } else if ((stage3 === true) && (player.position.x < 0)) {
         // if the user goes back past stage 3
-        back = true;
+        back = true
         clear()
         clearStage3()
         setup2()
