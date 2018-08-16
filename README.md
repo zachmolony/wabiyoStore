@@ -1,13 +1,22 @@
-# wabiyo.com   
+# Wabiyo website
 
-Website and clothing store for creative collective wabiyo.
+Website and clothing store for creative collective wabiyo and clothing company Wabiyo. 
 
-The site consists of a mobile store and desktop store, the desktop store is different from a normal store in that the customer must beat a dungeon platformer game to buy the clothes. 
+### Desktop JS Game
 
-The game is coded in javascript using p5.js, with assets made by wabiyo and sourced from itch.io.
+The desktop version of the site consists of a dungeon platformer game, written in javascript with the p5 module. The player/customer can play through the short game to find the item they want and check out.
 
-The mobile version has a familiar online store interface, but the background is a virtual reality experience controlled by the phone's accellerometer. The virtual reality is built using A-FRAME virtual reality framework.
+### Mobile VR
 
-All code is written from scratch and original. Still currently under development.
+The mobile version uses a simple layout though the background of the store is a Virtual-Reality scene controlled using the motion of the device, programmed and implemented using the A-FRAME VR framework. 
 
-The site is currently hosted via github pages at: wabiyo.com
+#### Asset credit
+
+Character assets created by Wabiyo, environment assets sourced from itch.io.
+
+#### Contact
+
+Feel free to contact Wabiyo via DM on instagram or myself by email: zachary.molony@ada.ac.uk
+
+![alt text](https://zachmolony.github.io/assets/icons/instagram.jpg)  [Instagram](https://www.instagram.com/wab.iyo/)
+![alt text](https://zachmolony.github.io/assets/icons/soundcloud.png) [Soundcloud](https://soundcloud.com/wabiyo)
