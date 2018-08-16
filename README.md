@@ -9,7 +9,7 @@ The desktop version of the site consists of a dungeon platformer game, written i
 
 ### Mobile VR
 
-<img src="assets/readme/mobile.png" alt="desktop" width="200px"/>
+<img src="assets/readme/iphone.png" alt="mobile" width="200px"/>
 The mobile version uses a simple layout though the background of the store is a Virtual-Reality scene controlled using the motion of the device, programmed and implemented using the A-FRAME VR framework. 
 
 #### Asset credit
@@ -20,5 +20,6 @@ Character assets created by Wabiyo, environment assets sourced from itch.io.
 
 Feel free to contact Wabiyo via DM on instagram or myself by email: zachary.molony@ada.ac.uk
 
-<img src="assets/readme/instagram.png" alt="desktop" width="40px"/>  [Instagram](https://www.instagram.com/wab.iyo/)
-<img src="assets/readme/sondcloud.png" alt="desktop" width="40px"/> [Soundcloud](https://soundcloud.com/wabiyo)
+<img src="assets/readme/instagram.jpg" alt="instagram" width="40px"/>  [Instagram](https://www.instagram.com/wab.iyo/)
+    
+<img src="assets/readme/soundcloud.png" alt="sondcloud" width="40px"/> [Soundcloud](https://soundcloud.com/wabiyo)
