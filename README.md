@@ -9,7 +9,7 @@ The desktop version of the site consists of a dungeon platformer game, written i
 
 ### Mobile VR
 
-<img src="assets/readme/iphone.png" alt="mobile" width="200px"/>
+<img src="assets/readme/iphone.png" alt="mobile" width="150px"/>
 The mobile version uses a simple layout though the background of the store is a Virtual-Reality scene controlled using the motion of the device, programmed and implemented using the A-FRAME VR framework. 
 
 #### Asset credit
