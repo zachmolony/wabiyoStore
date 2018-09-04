@@ -80,6 +80,11 @@
       text-align: center;
   }
 
+  .mob_footer {
+      padding: 30px;
+      text-align: center;
+  }
+
   p.double {
       border-style: solid;
       border-color: red;
