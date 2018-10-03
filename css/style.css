@@ -14,9 +14,11 @@
       .mobile_device_480px {
           display: none;
       }
+
       .mobile_device_380px {
           display: block;
       }
+
       .desktop {
           display: none;
       }
@@ -28,9 +30,11 @@
       .mobile_device_480px {
           display: block;
       }
+
       .mobile_device_380px {
           display: none;
       }
+
       .desktop {
           display: none;
       }
@@ -118,4 +122,21 @@
   body {
       /*background-image: url("assets/lightning.jpg")*/
       font-family: "Courier New", Courier, monospace;
+  }
+
+  /* STORE */
+
+  .lookbook {
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }
+
+  .store {
+      align-content: center;
+      margin: auto;
+      color: white;
+      text-align: center;
+      font-family: 'VT323', monospace;
   }
