@@ -54,8 +54,8 @@
     .grid-container {
         margin-top: 10em;
         z-index: -4;
+        display: none;
     }
-
 
     #theist_tee:hover {
         content: url(assets/shirts/theist_tee_back.png);
@@ -77,7 +77,10 @@
         </a>
     </div>
 
-    <div class="grid-container">
+    <div id="main">
+    </div>
+    
+    <div class="grid-container" id="store">
         <div class="grid-row">
             <a href="store.html">
                 <img src="assets/shirts/bunny_tee.png" alt="wabiyo bunny tee" width="300" height="300">
@@ -103,9 +106,6 @@
                 <img src="assets/shirts/computergod_tee.png" alt="wabiyo computer tee" width="300" height="300">
             </a>
         </div>
-    </div>
-
-    <div id="main">
     </div>
 
     <div class="footer">
