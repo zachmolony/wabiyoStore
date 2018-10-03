@@ -117,7 +117,7 @@ function draw() {
 
  function closeit(){ 
     document.getElementById('main').setAttribute("style", "display:none");
-    document.getElementById('store').setAttribute("style", "display:inline")
+    document.getElementById('store').setAttribute("style", "display:flex")
 } 
 setTimeout("closeit", 3000);
 
