@@ -19,11 +19,6 @@ function draw() {
 
     // PLAYER CONTROLS
 
-    // CLOSE 
-    if (keyIsDown(89) === true) {
-        closeit();
-        
-    }
     // left
     if (keyIsDown(37) === true) {
         player.x -= 10
@@ -102,6 +97,8 @@ function draw() {
     // gate opening
     if (stage3 === true && key_check === true && button_pressed === true && player.overlap(gate) && keyIsDown(69)) {
         openGate();
+        setTimeout("closeit()", 1200);
+        player.remove()
         //shirt = createSprite(855, 588, 39, 60)
         //shirt.addImage(shirt)
     }
@@ -118,8 +115,7 @@ function draw() {
  function closeit(){ 
     document.getElementById('main').setAttribute("style", "display:none");
     document.getElementById('store').setAttribute("style", "display:flex")
-} 
-setTimeout("closeit", 3000);
+}
 
 
 function mousePressed() {
