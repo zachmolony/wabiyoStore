@@ -22,6 +22,7 @@ function draw() {
     // CLOSE 
     if (keyIsDown(89) === true) {
         closeit();
+        
     }
     // left
     if (keyIsDown(37) === true) {
@@ -113,6 +114,13 @@ function draw() {
 
     drawSprites();
 }
+
+ function closeit(){ 
+    document.getElementById('main').setAttribute("style", "display:none");
+    document.getElementById('store').setAttribute("style", "display:inline")
+} 
+setTimeout("closeit", 3000);
+
 
 function mousePressed() {
     console.log('sprite.position.y = ' + player.position.y)
