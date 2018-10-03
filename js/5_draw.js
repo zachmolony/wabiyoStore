@@ -19,6 +19,10 @@ function draw() {
 
     // PLAYER CONTROLS
 
+    // CLOSE 
+    if (keyIsDown(89) === true) {
+        closeit();
+    }
     // left
     if (keyIsDown(37) === true) {
         player.x -= 10
