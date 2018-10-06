@@ -15,6 +15,15 @@ function setup1() {
     stage1 = true
     stage2 = false
     stage3 = false
+    
+    // instructions
+    
+    if (back != true) {
+        arrows = createSprite(250, 330, 1, 1)
+        arrows.addImage(arrow_img)
+        e_key = createSprite(140, 320, 1, 1)
+        e_key.addImage(e_key_img)
+    } 
 
     // environment
 
@@ -98,6 +107,8 @@ function clearStage1() {
     platform_e.remove()
     platform_f.remove()
     player.remove()
+    arrows.remove()
+    e_key.remove()
 }
 
 // SETUP STAGE 2

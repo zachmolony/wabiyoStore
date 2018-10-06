@@ -1,3 +1,6 @@
+snip cart version
+
+
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="css/style.css">
@@ -86,9 +89,10 @@
         <body>
 
             <div class="storefront">
-               
-               <a href="#" class="cart"><img src="assets/eugene.png" alt="cartimg" width="110"></a>
-               
+
+                <div class="cart">
+                    <a href="#" class="snipcart-checkout"><img src="assets/eugene.png" alt="cartimg" width="110"></a>
+                </div>
                 <div class="store">
                     <div class="logo">
                         <a href="index.html">
@@ -98,27 +102,62 @@
                     <div class="item">
                         <img src="assets/shirts/eugene_tee.png" width="300" height="300">
                         <p style="font-size:6vw">EUGENE TEE</p>
-                        <p>sold out</p>
+                        <button class="snipcart-add-item" 
+                            data-item-id="1" 
+                            data-item-name="EUGENE TEE" 
+                            data-item-price="15.00" 
+                            data-item-url="http://wabiyo.com/mobile_store.html" 
+                            data-item-image="http://wabiyo.com/assets/thumbnails/eugene_tee.png">
+                            <text>ADD TO CART</text>
+                        </button>
                     </div>
                     <div class="item">
                         <img src="assets/shirts/computergod_tee.png" width="300" height="300">
                         <p style="font-size:6vw">COMPUTER GOD TEE</p>
-                        <p>sold out</p>
+                        <button class="snipcart-add-item" 
+                           data-item-id="2" 
+                           data-item-name="COMPUTER GOD TEE" 
+                           data-item-price="15.00" 
+                           data-item-url="http://wabiyo.com/mobile_store.html" 
+                           data-item-image="http://wabiyo.com/assets/thumbnails/computergod_tee.png">
+                            <text>ADD TO CART</text>
+                        </button>
                     </div>
                     <div class="item">
                         <img src="assets/shirts/theist_tee_front.png" width="300" height="300">
                         <p style="font-size:6vw">THEIST TEE</p>
-                        <p>sold out</p>
+                        <button class="snipcart-add-item"
+                            data-item-id="3" 
+                            data-item-name="THEIST TEE" 
+                            data-item-price="15.00" 
+                            data-item-url="http://wabiyo.com/mobile_store.html" 
+                            data-item-image="http://wabiyo.com/assets/thumbnails/theist_tee_front.png">
+                            <text>ADD TO CART</text>
+                        </button>
                     </div>
                     <div class="item">
                         <img src="assets/shirts/bunny_tee.png" width="300" height="300">
                         <p style="font-size:6vw">BUNNY MONK TEE</p>
-                        <p>sold out</p>
+                        <button class="snipcart-add-item" 
+                           data-item-id="4" 
+                           data-item-name="BUNNY MONK TEE" 
+                           data-item-price="15.00" 
+                           data-item-url="http://wabiyo.com/mobile_store.html" 
+                           data-item-image="http://wabiyo.com/assets/thumbnails/bunny_tee.png">
+                            <text>ADD TO CART</text>
+                        </button>
                     </div>
                     <div class="item">
                         <img src="assets/shirts/unpleasantcompany_tee.png" width="300" height="300">
                         <p style="font-size:6vw">UNPLEASANT COMPANY TEE</p>
-                        <p>sold out</p>
+                        <button class="snipcart-add-item" 
+                           data-item-id="5" 
+                           data-item-name="UNPLEASANT COMPANY TEE" 
+                           data-item-price="15.00" 
+                           data-item-url="http://wabiyo.com/mobile_store.html" 
+                           data-item-image="http://wabiyo.com/assets/thumbnails/unpleasantcompany_tee.png">
+                            <text>ADD TO CART</text>
+                        </button>
                     </div>
                 </div>
 

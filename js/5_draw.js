@@ -97,6 +97,8 @@ function draw() {
     // gate opening
     if (stage3 === true && key_check === true && button_pressed === true && player.overlap(gate) && keyIsDown(69)) {
         openGate();
+        setTimeout("closeit()", 1200);
+        player.remove()
         //shirt = createSprite(855, 588, 39, 60)
         //shirt.addImage(shirt)
     }
@@ -109,6 +111,12 @@ function draw() {
 
     drawSprites();
 }
+
+ function closeit(){ 
+    document.getElementById('main').setAttribute("style", "display:none");
+    document.getElementById('store').setAttribute("style", "display:flex")
+}
+
 
 function mousePressed() {
     console.log('sprite.position.y = ' + player.position.y)

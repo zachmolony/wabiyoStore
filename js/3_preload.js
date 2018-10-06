@@ -16,4 +16,8 @@ function preload() {
     waterfallimg = loadImage("assets/environment/waterfall.png")
     windowimg = loadImage("assets/environment/window.png")
     wooden_platform_img = loadImage("assets/environment/wooden_platform.png")
+    
+    // instructions
+    arrow_img = loadImage("assets/instructions/arrows.gif")
+    e_key_img = loadImage("assets/instructions/e_button.gif")
 }
