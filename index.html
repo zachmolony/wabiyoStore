@@ -21,10 +21,19 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-124206276-1');
+
     </script>
 </head>
 
 <style>
+    html {
+        background: url(assets/dgb.gif) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
     .navigation {
         display: table;
         margin-right: auto;
@@ -37,21 +46,22 @@
         padding-top: 0px;
         width: 50%;
     }
-    
+
     .navigation_mobile p1 {
         text-decoration: line-through;
     }
-    
+
     .mob_footer {
         font-size: 21px;
     }
 
     ul {
-        border: 1px solid white;
+        list-style: none;
+        border: 1px solid #ffffff;
         margin: 0;
         padding: 0;
         width: 500px;
-        background-color: #f1f1f1;
+        background-color: rgba(255, 255, 255, 0);
     }
 
     li a {
@@ -60,26 +70,27 @@
         padding: 5px 5px;
         text-align: center;
         text-decoration: none;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid rgb(255, 255, 255);
     }
-    
+
     li:last-child {
         border-bottom: none;
     }
-    
+
 </style>
 
 <body>
     <div id="content">
 
         <div class="desktop">
+
             <div class="logo">
                 <a href="index.html">
-            <img src = "assets/dark/c-logo.jpg" alt="wabiyo c sign">
-        </a>
+                    <img src="assets/dark/c-logo_dark.png" alt="wabiyo c sign">
+                </a>
             </div>
             <div class="textLogo">
-                <img src="assets/dark/text-logo.png" alt="wabiyo logo">
+                <img src="assets/welcome.gif" alt="wabiyo logo">
             </div>
             <div class="navigation">
                 <ul>
@@ -94,18 +105,21 @@
 
             <div class="footer">
                 <p>
-                    <a href="https://open.spotify.com/artist/5YXZToONwkx4Asj4E1IJwS?si=ufwlt-EuTrSgJrUOsLlBMg">spotify</a>
+                    <a href="https://open.spotify.com/artist/5YXZToONwkx4Asj4E1IJwS">spotify</a>
                     <a href="https://www.instagram.com/wab.iyo/">instagram</a>
                     <a href="https://soundcloud.com/wabiyo">soundcloud</a>
                 </p>
+
             </div>
+
+
         </div>
 
         <div class="mobile_device_480px">
             <div class="logo">
                 <a href="index.html">
-                <img src = "assets/dark/c-logo.jpg" width="70">
-            </a>
+                    <img src="assets/dark/c-logo.jpg" width="70">
+                </a>
             </div>
             <div class="textLogo">
                 <img src="assets/wabiyo_spin.gif" width="1000">
@@ -131,4 +145,5 @@
         </div>
     </div>
 </body>
+
 </html>
