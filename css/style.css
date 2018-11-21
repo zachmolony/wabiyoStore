@@ -27,6 +27,7 @@
   /* if mobile device max width 480px */
 
   @media only screen and (max-device-width: 480px) {
+
       .mobile_device_480px {
           display: block;
       }
@@ -45,7 +46,7 @@
   html * {
       background-color: rgba(0, 0, 0, 0);
       font-family: 'VT323', monospace;
-      font-size: 2vh;
+      font-size: 3vh;
   }
 
   .grid-container {
