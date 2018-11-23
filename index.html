@@ -25,22 +25,29 @@
 </head>
 
 <style>
+    @media screen and (min-device-width: 800px) {
+        html {
+            background: url("assets/dgb2.gif") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    }
+
     @media only screen and (max-device-width: 380px) {
-        li > * {
+        html {
+            background-color: black;
+        }
+
+        li>* {
             font-size: 4vh;
         }
+
         lp {
             font-size: 4vh;
             text-decoration-line: line-through;
         }
-    }
-
-    html {
-        background: url("assets/dgb2.gif") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
     }
 
     .navigation {
@@ -85,7 +92,7 @@
     li:last-child {
         border-bottom: none;
     }
-    
+
     lp {
         text-decoration-line: line-through;
     }
@@ -108,10 +115,18 @@
                 <ul>
                     <li><a href="https://youtu.be/9i98HEYOX1Y">days gone by</a></li>
                     <li><a href="store.html">store</a></li>
-                    <li><a href=""><lp>coming soon</lp></a></li>
-                    <li><a href=""><lp>coming soon</lp></a></li>
-                    <li><a href=""><lp>coming soon</lp></a></li>
-                    <li><a href=""><lp>coming soon</lp></a></li>
+                    <li><a href="">
+                            <lp>coming soon</lp>
+                        </a></li>
+                    <li><a href="">
+                            <lp>coming soon</lp>
+                        </a></li>
+                    <li><a href="">
+                            <lp>coming soon</lp>
+                        </a></li>
+                    <li><a href="">
+                            <lp>coming soon</lp>
+                        </a></li>
                 </ul>
             </div>
 
