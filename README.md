@@ -1,6 +1,6 @@
 # Wabiyo website
 
-Website and clothing store for creative collective wabiyo and clothing company Wabiyo. 
+Website and merchandise store for creative collective Wabiyo. 
 
 ## Desktop JS Game
 
