@@ -1,6 +1,6 @@
 # Wabiyo website
 
-Website and merchandise store for creative collective Wabiyo. 
+Website and merchandise store for creative collective Wabiyo, with Virtual Reality storefront and p5.js platformer game.
 
 ## Desktop JS Game
 
